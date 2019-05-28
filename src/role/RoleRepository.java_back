@@ -1,0 +1,73 @@
+package role;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+
+import org.apache.log4j.Logger;
+
+import databasemanager.DatabaseManager;
+
+public class RoleRepository {
+	Logger logger = Logger.getLogger(RoleRepository.class);
+	public static RoleRepository instance;
+	private static HashMap<Long, RoleDTO> roleDTOToRoleID = new HashMap<>();
+	private static ArrayList<RoleDTO> roleList = new ArrayList<>();
+	private RoleRepository() {
+		// TODO Auto-generated constructor stub		
+		reload();
+	}
+	public synchronized static RoleRepository getInstance(){
+		if (instance == null){
+			instance = new RoleRepository();			
+		}
+		return instance;
+	}
+	
+	public static Collection<RoleDTO> getAllRole()
+	{		
+		return roleList;
+	}
+	
+	public static RoleDTO getRoleByRoleID(long roleID)
+	{		
+		return roleDTOToRoleID.get(roleID);
+	}
+	
+	public void reload()
+	{
+		Connection connection = null;
+		ResultSet rs = null;
+		Statement stmt = null;
+		try{
+			
+			String sql = "select * from role";
+			logger.debug("sql " + sql);
+			connection = DatabaseManager.getInstance().getConnection();
+			stmt = connection.createStatement();
+			rs = stmt.executeQuery(sql);			
+
+			while(rs.next()){
+				RoleDTO roleDTO = new RoleDTO();
+				roleDTO.ID = rs.getInt("ID");
+				roleDTO.roleName = rs.getString("roleName");
+				roleDTOToRoleID.put(roleDTO.ID,roleDTO);
+			}
+			
+			roleList = new ArrayList<RoleDTO>(roleDTOToRoleID.values());
+		}
+		catch(Exception ex)
+		{
+			logger.fatal("",ex);
+		}
+		finally{
+			try{ if (stmt != null) {stmt.close();}} catch (Exception e){}
+			try{ if (connection != null){ DatabaseManager.getInstance().freeConnection(connection); }}catch (Exception e){}
+		}
+	}
+}
