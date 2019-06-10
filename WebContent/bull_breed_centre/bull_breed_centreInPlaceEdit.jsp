@@ -103,8 +103,7 @@ String datestr = dateFormat.format(date);
 			
 	
 	<div class="form-inline" id = 'bullType_div_<%=i%>'>
-		<select class='form-control'  name='bullType' id = 'bullType_select_<%=i%>'  onchange="fillDependentDiv('bullType_select_<%=i%>', 'bullType_dependent_div<%=i%>')"
->
+		<select class='form-control'  name='bullType' id = 'bullType_select_<%=i%>'  >
 <%
 if(actionName.equals("edit"))
 {
@@ -119,8 +118,6 @@ out.print(Options);
 		</select>
 		
 	</div>
-		<div id = 'bullType_dependent_div<%=i%>'>
-		</div>	
 				
 <%=("</td>")%>
 			
@@ -128,27 +125,6 @@ out.print(Options);
 			
 	
 	<div class="form-inline" id = 'breedType_div_<%=i%>'>
-<%
-if(actionName.equals("edit"))
-{
-%>
-		<label class='control-label'  id = 'breedType_Label_<%=i%>' >
-<%
-											value = row.breedType + "";
-											
-											value = CommonDAO.getName(Integer.parseInt(value), "breed", Language.equals("English")?"name_en":"name_bn", "id");
-														
-											out.println(value);
-				
-			
-%>
-		</label>
-		<input type='hidden' class='form-control'  name='breedType' id = 'breedType_select_<%=i%>' value='<%=row.breedType%>'/>
-<%		
-}
-else
-{
-%>
 		<select class='form-control'  name='breedType' id = 'breedType_select_<%=i%>'  >
 <%
 if(actionName.equals("edit"))
@@ -163,9 +139,6 @@ out.print(Options);
 %>
 		</select>
 		
-<%
-}
-%>
 	</div>
 				
 <%=("</td>")%>
@@ -271,28 +244,5 @@ out.print(Options);
 											
 												
 <%=("</td>")%>
-
-<%
 					
-												out.println("<td>");
-											out.println("<a href='Bull_breed_centreServlet?actionType=view&ID=" + row.iD + "'>View</a>");
-											
-											out.println("<a href='#' data-toggle='modal' data-target='#viedFileModal_" + i + "'>Modal</a>");
-											
-											out.println("<div class='modal fade' id='viedFileModal_" + i + "'>");
-											  out.println("<div class='modal-dialog modal-lg' role='document'>");
-											    out.println("<div class='modal-content'>");
-											      out.println("<div class='modal-body'>");
-											        out.println("<button type='button' class='close' data-dismiss='modal' aria-label='Close'>");
-											          out.println("<span aria-hidden='true'>&times;</span>");
-											        out.println("</button>");											        
-											        
-											        out.println("<object type='text/html' data='Bull_breed_centreServlet?actionType=view&modal=1&ID=" + row.iD +  "' width='100%' height='500' style='height: 85vh;'>No Support</object>");
-											        
-											      out.println("</div>");
-											    out.println("</div>");
-											  out.println("</div>");
-											out.println("</div>");
-											out.println("</td>");
-%>											
-	
+		

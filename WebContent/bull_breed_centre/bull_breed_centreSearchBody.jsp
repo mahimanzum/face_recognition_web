@@ -72,7 +72,15 @@ $(document).ready(function(){
 	         });
 	    }
 	});
-})
+});
+$(document).on("click",'#chkEdit',function(){
+	debugger;
+	$("#chkEdit").toggleClass("checked");
+});
+$(document).on("click",'input[type="checkbox"]',function(e){
+	debugger;
+	e.classList.toggle("checked");
+});
 
 </script>
 

@@ -48,7 +48,6 @@ String Language = LM.getText(LC.BULL_BREED_CENTRE_EDIT_LANGUAGE, loginDTO);
 								<th><%=LM.getText(LC.BULL_BREED_CENTRE_EDIT_INFOFILE, loginDTO)%></th>
 								<th><%=LM.getText(LC.BULL_BREED_CENTRE_EDIT_BULLIMAGE, loginDTO)%></th>
 								<th><%=LM.getText(LC.BULL_BREED_CENTRE_EDIT_DESCRIPTION, loginDTO)%></th>
-								<th>View Details</th>
 								<th><%out.print(LM.getText(LC.BULL_BREED_CENTRE_SEARCH_BULL_BREED_CENTRE_EDIT_BUTTON, loginDTO));%></th>
 								<th><input type="submit" class="btn btn-xs btn-danger" value="
 								<%out.print(LM.getText(LC.BULL_BREED_CENTRE_SEARCH_BULL_BREED_CENTRE_DELETE_BUTTON, loginDTO));%>
@@ -191,26 +190,6 @@ String Language = LM.getText(LC.BULL_BREED_CENTRE_EDIT_LANGUAGE, loginDTO);
 		
 	
 
-											out.println("<td>");
-											out.println("<a href='Bull_breed_centreServlet?actionType=view&ID=" + row.iD + "'>View</a>");
-											
-											out.println("<a href='#' data-toggle='modal' data-target='#viedFileModal_" + i + "'>Modal</a>");
-											
-											out.println("<div class='modal fade' id='viedFileModal_" + i + "'>");
-											  out.println("<div class='modal-dialog modal-lg' role='document'>");
-											    out.println("<div class='modal-content'>");
-											      out.println("<div class='modal-body'>");
-											        out.println("<button type='button' class='close' data-dismiss='modal' aria-label='Close'>");
-											          out.println("<span aria-hidden='true'>&times;</span>");
-											        out.println("</button>");											        
-											        
-											        out.println("<object type='text/html' data='Bull_breed_centreServlet?actionType=view&modal=1&ID=" + row.iD +  "' width='100%' height='500' style='height: 85vh;'>No Support</object>");
-											        
-											      out.println("</div>");
-											    out.println("</div>");
-											  out.println("</div>");
-											out.println("</div>");
-											out.println("</td>");
 	
 
 											
@@ -224,7 +203,9 @@ String Language = LM.getText(LC.BULL_BREED_CENTRE_EDIT_LANGUAGE, loginDTO);
 											
 											
 											out.println("<td>");
-											out.println("<input type='checkbox' name='ID' value='" + row.iD + "'/>");
+											out.println("<div class='checker'>");
+											out.println("<span id='chkEdit' ><input type='checkbox' name='ID' value='" + row.iD + "'/></span>");
+											out.println("</div");
 											out.println("</td>");
 											out.println("</tr>");
 										}
@@ -301,27 +282,6 @@ function getOfficer(officer_id, officer_select)
 	xhttp.send();
 }
 
-function fillDependentDiv(parentelement, dependentElement)
-{
-	console.log("getting Element");
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() 
-	{
-		if (this.readyState == 4 && this.status == 200) 
-		{			
-			document.getElementById(dependentElement).innerHTML = this.responseText ;						
-		}
-		else if(this.readyState == 4 && this.status != 200)
-		{
-			alert('failed ' + this.status);
-		}
-	};
-	var value= document.getElementById(parentelement).value;
-	console.log("selected value = " + value);
-	 
-	xhttp.open("POST", "Bull_breed_centreServlet?actionType=getDependentDiv&Value=" + value, true);
-	xhttp.send();
-}
 
 function getLayer(layernum, layerID, childLayerID, selectedValue)
 {
@@ -459,8 +419,9 @@ function doEdit(params, i, id, deletedStyle)
 				document.getElementById('tr_' + i).innerHTML += "<td id = '" + i + "_Submit'></td>";
 				document.getElementById(i + '_Submit').innerHTML += "<a onclick=\""+ onclickFunc +"\">Submit</a>";				
 				document.getElementById('tr_' + i).innerHTML += "<td>"
-				+ "<input type='checkbox' name='ID' value='" + id + "'/>"
-				+ "</td>";
+					+ "<div class='checker'>"
+					+ "<span class='' id='chkEdit'><input type='checkbox' name='ID' value='" + id + "'/></span>"
+					+ "</td>";
 				init(i);
 			}
 			else

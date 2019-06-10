@@ -133,7 +133,14 @@
 						<input type="text" class="form-control" id="grs_office" placeholder="" name="grs_office">
 					</div>
 				</div>
-				
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5" style="margin-top: 5px;">
+					<div class="col-xs-2 col-sm-4 col-md-4">
+						<label for="" class="control-label pull-right"><%=LM.getText(LC.BULL_BREED_CENTRE_SEARCH_GRSOFFICER, loginDTO)%></label>
+					</div>
+					<div class="col-xs-10 col-sm-8 col-md-8">
+						<input type="text" class="form-control" id="grs_officer" placeholder="" name="grs_officer">
+					</div>
+				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-5" style="margin-top: 5px;">
 					<div class="col-xs-2 col-sm-4 col-md-4">
 						<label for="" class="control-label pull-right"><%=LM.getText(LC.BULL_BREED_CENTRE_SEARCH_INFOFILE, loginDTO)%></label>

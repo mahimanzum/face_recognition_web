@@ -152,26 +152,6 @@ String value = "";
 		
 	
 
-											out.println("<td>");
-											out.println("<a href='Bull_breed_centreServlet?actionType=view&ID=" + row.iD + "'>View</a>");
-											
-											out.println("<a href='#' data-toggle='modal' data-target='#viedFileModal_" + i + "'>Modal</a>");
-											
-											out.println("<div class='modal fade' id='viedFileModal_" + i + "'>");
-											  out.println("<div class='modal-dialog modal-lg' role='document'>");
-											    out.println("<div class='modal-content'>");
-											      out.println("<div class='modal-body'>");
-											        out.println("<button type='button' class='close' data-dismiss='modal' aria-label='Close'>");
-											          out.println("<span aria-hidden='true'>&times;</span>");
-											        out.println("</button>");											        
-											        
-											        out.println("<object type='text/html' data='Bull_breed_centreServlet?actionType=view&modal=1&ID=" + row.iD +  "' width='100%' height='500' style='height: 85vh;'>No Support</object>");
-											        
-											      out.println("</div>");
-											    out.println("</div>");
-											  out.println("</div>");
-											out.println("</div>");
-											out.println("</td>");
 	
 
 											
@@ -185,6 +165,8 @@ String value = "";
 											
 											
 											out.println("<td>");
-											out.println("<input type='checkbox' name='ID' value='" + row.iD + "'/>");
+											out.println("<div class='checker'>");
+											out.println("<span id='chkEdit' ><input type='checkbox' name='ID' value='" + row.iD + "'/></span>");
+											out.println("</div");
 											out.println("</td>");%>
 

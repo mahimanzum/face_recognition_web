@@ -675,7 +675,6 @@ public class SessionConstants {
 
 
 
-
 	public final static String NAV_BULL_BREED_CENTRE = "navBULL_BREED_CENTRE";
 	public final static String VIEW_BULL_BREED_CENTRE = "viewBULL_BREED_CENTRE";
 	public static final String[][] SEARCH_BULL_BREED_CENTRE = {
@@ -683,10 +682,36 @@ public class SessionConstants {
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_BREEDTYPE, "breed_type" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_CENTRETYPE, "centre_type" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_GRSOFFICE, "grs_office" },
+		{ ""+LC.BULL_BREED_CENTRE_SEARCH_GRSOFFICER, "grs_officer" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_INFOFILE, "info_file" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_BULLIMAGE, "bull_image" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_DESCRIPTION, "description" },
 		{ ""+LC.BULL_BREED_CENTRE_SEARCH_ANYFIELD , "AnyField" }
 	};
+
+
+
+
+	public final static String NAV_UNVALIDATED_WORD = "navUNVALIDATED_WORD";
+	public final static String VIEW_UNVALIDATED_WORD = "viewUNVALIDATED_WORD";
+	public static final String[][] SEARCH_UNVALIDATED_WORD = {
+		{ ""+LC.UNVALIDATED_WORD_SEARCH_WORD, "word" },
+		{ ""+LC.UNVALIDATED_WORD_SEARCH_ANYFIELD , "AnyField" }
+	};
+
+
+
+
+	public final static String NAV_VALIDATED_WORD = "navVALIDATED_WORD";
+	public final static String VIEW_VALIDATED_WORD = "viewVALIDATED_WORD";
+	public static final String[][] SEARCH_VALIDATED_WORD = {
+		{ ""+LC.VALIDATED_WORD_SEARCH_VALIDATED, "validated" },
+		{ ""+LC.VALIDATED_WORD_SEARCH_ANYFIELD , "AnyField" }
+	};
+
+
+
+
+	
 
 }

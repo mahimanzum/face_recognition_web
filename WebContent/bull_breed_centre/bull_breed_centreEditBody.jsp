@@ -135,8 +135,7 @@ String datestr = dateFormat.format(date);
 </label>
 <div class="form-group ">					
 	<div class="col-lg-6 " id = 'bullType_div_<%=i%>'>	
-		<select class='form-control'  name='bullType' id = 'bullType_select_<%=i%>'  onchange="fillDependentDiv('bullType_select_<%=i%>', 'bullType_dependent_div<%=i%>')"
->
+		<select class='form-control'  name='bullType' id = 'bullType_select_<%=i%>'  >
 <%
 if(actionName.equals("edit"))
 {
@@ -152,8 +151,6 @@ out.print(Options);
 		
 	</div>
 </div>			
-		<div id = 'bullType_dependent_div<%=i%>'>
-		</div>	
 				
 	
 <label class="col-lg-3 control-label">
@@ -161,27 +158,6 @@ out.print(Options);
 </label>
 <div class="form-group ">					
 	<div class="col-lg-6 " id = 'breedType_div_<%=i%>'>	
-<%
-if(actionName.equals("edit"))
-{
-%>
-		<label class='control-label'  id = 'breedType_Label_<%=i%>' >
-<%
-											value = row.breedType + "";
-											
-											value = CommonDAO.getName(Integer.parseInt(value), "breed", Language.equals("English")?"name_en":"name_bn", "id");
-														
-											out.println(value);
-				
-			
-%>
-		</label>
-		<input type='hidden' class='form-control'  name='breedType' id = 'breedType_select_<%=i%>' value='<%=row.breedType%>'/>
-<%		
-}
-else
-{
-%>
 		<select class='form-control'  name='breedType' id = 'breedType_select_<%=i%>'  >
 <%
 if(actionName.equals("edit"))
@@ -196,9 +172,6 @@ out.print(Options);
 %>
 		</select>
 		
-<%
-}
-%>
 	</div>
 </div>			
 				
@@ -380,27 +353,6 @@ function getOfficer(officer_id, officer_select)
 	xhttp.send();
 }
 
-function fillDependentDiv(parentelement, dependentElement)
-{
-	console.log("getting Element");
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() 
-	{
-		if (this.readyState == 4 && this.status == 200) 
-		{			
-			document.getElementById(dependentElement).innerHTML = this.responseText ;						
-		}
-		else if(this.readyState == 4 && this.status != 200)
-		{
-			alert('failed ' + this.status);
-		}
-	};
-	var value= document.getElementById(parentelement).value;
-	console.log("selected value = " + value);
-	 
-	xhttp.open("POST", "Bull_breed_centreServlet?actionType=getDependentDiv&Value=" + value, true);
-	xhttp.send();
-}
 
 function getLayer(layernum, layerID, childLayerID, selectedValue)
 {
