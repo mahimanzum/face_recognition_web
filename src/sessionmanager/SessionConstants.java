@@ -692,16 +692,6 @@ public class SessionConstants {
 
 
 
-	public final static String NAV_UNVALIDATED_WORD = "navUNVALIDATED_WORD";
-	public final static String VIEW_UNVALIDATED_WORD = "viewUNVALIDATED_WORD";
-	public static final String[][] SEARCH_UNVALIDATED_WORD = {
-		{ ""+LC.UNVALIDATED_WORD_SEARCH_WORD, "word" },
-		{ ""+LC.UNVALIDATED_WORD_SEARCH_ANYFIELD , "AnyField" }
-	};
-
-
-
-
 	public final static String NAV_VALIDATED_WORD = "navVALIDATED_WORD";
 	public final static String VIEW_VALIDATED_WORD = "viewVALIDATED_WORD";
 	public static final String[][] SEARCH_VALIDATED_WORD = {
@@ -712,6 +702,22 @@ public class SessionConstants {
 
 
 
-	
+
+
+
+
+
+
+
+	public final static String NAV_FACIAL_RECOGNIZATION = "navFACIAL_RECOGNIZATION";
+	public final static String VIEW_FACIAL_RECOGNIZATION = "viewFACIAL_RECOGNIZATION";
+	public static final String[][] SEARCH_FACIAL_RECOGNIZATION = {
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_NAME, "name" },
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_ADDRESS, "address" },
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_PHONE, "phone" },
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_EMAIL, "email" },
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_IMAGE, "image" },
+		{ ""+LC.FACIAL_RECOGNIZATION_SEARCH_ANYFIELD , "AnyField" }
+	};
 
 }

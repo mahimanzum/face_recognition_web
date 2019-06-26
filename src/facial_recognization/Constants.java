@@ -1,4 +1,4 @@
-package grs_top_layer;
+package facial_recognization;
 
 public class Constants {
 

@@ -143,7 +143,6 @@
         </div>         
         </div>
         <div class="copyright"> <%=Calendar.getInstance().get(Calendar.YEAR) %> @ REVE Systems Limited </div>
-       
         <!--[if lt IE 9]>
 <script src="<%=request.getContextPath()%>/assetsglobal/plugins/respond.min.js"></script>
 <script src="<%=request.getContextPath()%>/assetsglobal/plugins/excanvas.min.js"></script> 

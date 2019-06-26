@@ -1,4 +1,4 @@
-package bull_breed_centre;
+package facial_recognization;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,7 +19,7 @@ import user.UserDAO;
 import user.UserRepository;
 
 
-public class Bull_breed_centreDAO  implements NavigationService{
+public class Facial_recognizationDAO  implements NavigationService{
 	
 	Logger logger = Logger.getLogger(getClass());
 	
@@ -35,13 +35,13 @@ public class Bull_breed_centreDAO  implements NavigationService{
 		String query = "UPDATE vbSequencer SET table_LastModificationTime=? WHERE table_name=?";
 		ps = connection.prepareStatement(query);
 		ps.setLong(1,lastModificationTime);
-		ps.setString(2,"bull_breed_centre");
+		ps.setString(2,"facial_recognization");
 		ps.execute();
 		ps.close();
 	}
 	
 	
-	public void addBull_breed_centre(Bull_breed_centreDTO bull_breed_centreDTO) throws Exception{
+	public void addFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception{
 		
 		Connection connection = null;
 		PreparedStatement ps = null;
@@ -56,40 +56,28 @@ public class Bull_breed_centreDAO  implements NavigationService{
 				System.out.println("nullconn");
 			}
 
-			bull_breed_centreDTO.iD = DatabaseManager.getInstance().getNextSequenceId("Bull_breed_centre");
+			facial_recognizationDTO.iD = DatabaseManager.getInstance().getNextSequenceId("Facial_recognization");
 
-			String sql = "INSERT INTO bull_breed_centre";
+			String sql = "INSERT INTO facial_recognization";
 			
 			sql += " (";
 			sql += "ID";
 			sql += ", ";
-			sql += "bull_type";
+			sql += "name";
 			sql += ", ";
-			sql += "breed_type";
+			sql += "address";
 			sql += ", ";
-			sql += "centre_type";
+			sql += "phone";
 			sql += ", ";
-			sql += "grs_office";
+			sql += "email";
 			sql += ", ";
-			sql += "grs_officer";
-			sql += ", ";
-			sql += "info_file";
-			sql += ", ";
-			sql += "bull_image";
-			sql += ", ";
-			sql += "description";
+			sql += "image";
 			sql += ", ";
 			sql += "isDeleted";
 			sql += ", lastModificationTime)";
 			
 			
             sql += " VALUES(";
-			sql += "?";
-			sql += ", ";
-			sql += "?";
-			sql += ", ";
-			sql += "?";
-			sql += ", ";
 			sql += "?";
 			sql += ", ";
 			sql += "?";
@@ -114,16 +102,13 @@ public class Bull_breed_centreDAO  implements NavigationService{
 
 			int index = 1;
 
-			ps.setObject(index++,bull_breed_centreDTO.iD);
-			ps.setObject(index++,bull_breed_centreDTO.bullType);
-			ps.setObject(index++,bull_breed_centreDTO.breedType);
-			ps.setObject(index++,bull_breed_centreDTO.centreType);
-			ps.setObject(index++,bull_breed_centreDTO.grsOffice);
-			ps.setObject(index++,bull_breed_centreDTO.grsOfficer);
-			ps.setObject(index++,bull_breed_centreDTO.infoFile);
-			ps.setObject(index++,bull_breed_centreDTO.bullImage);
-			ps.setObject(index++,bull_breed_centreDTO.description);
-			ps.setObject(index++,bull_breed_centreDTO.isDeleted);
+			ps.setObject(index++,facial_recognizationDTO.iD);
+			ps.setObject(index++,facial_recognizationDTO.name);
+			ps.setObject(index++,facial_recognizationDTO.address);
+			ps.setObject(index++,facial_recognizationDTO.phone);
+			ps.setObject(index++,facial_recognizationDTO.email);
+			ps.setObject(index++,facial_recognizationDTO.image);
+			ps.setObject(index++,facial_recognizationDTO.isDeleted);
 			ps.setObject(index++, lastModificationTime);
 			
 			System.out.println(ps);
@@ -150,16 +135,16 @@ public class Bull_breed_centreDAO  implements NavigationService{
 	}
 	
 	//need another getter for repository
-	public Bull_breed_centreDTO getBull_breed_centreDTOByID (long ID) throws Exception{
+	public Facial_recognizationDTO getFacial_recognizationDTOByID (long ID) throws Exception{
 		Connection connection = null;
 		ResultSet rs = null;
 		Statement stmt = null;
-		Bull_breed_centreDTO bull_breed_centreDTO = null;
+		Facial_recognizationDTO facial_recognizationDTO = null;
 		try{
 			
 			String sql = "SELECT * ";
 
-			sql += " FROM bull_breed_centre";
+			sql += " FROM facial_recognization";
 			
             sql += " WHERE ID=" + ID;
 			
@@ -172,18 +157,15 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			rs = stmt.executeQuery(sql);
 
 			if(rs.next()){
-				bull_breed_centreDTO = new Bull_breed_centreDTO();
+				facial_recognizationDTO = new Facial_recognizationDTO();
 
-				bull_breed_centreDTO.iD = rs.getLong("ID");
-				bull_breed_centreDTO.bullType = rs.getInt("bull_type");
-				bull_breed_centreDTO.breedType = rs.getInt("breed_type");
-				bull_breed_centreDTO.centreType = rs.getInt("centre_type");
-				bull_breed_centreDTO.grsOffice = rs.getInt("grs_office");
-				bull_breed_centreDTO.grsOfficer = rs.getLong("grs_officer");
-				bull_breed_centreDTO.infoFile = rs.getString("info_file");
-				bull_breed_centreDTO.bullImage = rs.getString("bull_image");
-				bull_breed_centreDTO.description = rs.getString("description");
-				bull_breed_centreDTO.isDeleted = rs.getBoolean("isDeleted");
+				facial_recognizationDTO.iD = rs.getLong("ID");
+				facial_recognizationDTO.name = rs.getString("name");
+				facial_recognizationDTO.address = rs.getString("address");
+				facial_recognizationDTO.phone = rs.getString("phone");
+				facial_recognizationDTO.email = rs.getString("email");
+				facial_recognizationDTO.image = rs.getString("image");
+				facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
 
 			}			
 			
@@ -202,10 +184,10 @@ public class Bull_breed_centreDAO  implements NavigationService{
 				} 
 			}catch(Exception ex2){}
 		}
-		return bull_breed_centreDTO;
+		return facial_recognizationDTO;
 	}
 	
-	public void updateBull_breed_centre(Bull_breed_centreDTO bull_breed_centreDTO) throws Exception{
+	public void updateFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception{
 		
 		Connection connection = null;
 		PreparedStatement ps = null;
@@ -214,30 +196,24 @@ public class Bull_breed_centreDAO  implements NavigationService{
 		try{
 			connection = DatabaseManager.getInstance().getConnection();
 
-			String sql = "UPDATE bull_breed_centre";
+			String sql = "UPDATE facial_recognization";
 			
 			sql += " SET ";
 			sql += "ID=?";
 			sql += ", ";
-			sql += "bull_type=?";
+			sql += "name=?";
 			sql += ", ";
-			sql += "breed_type=?";
+			sql += "address=?";
 			sql += ", ";
-			sql += "centre_type=?";
+			sql += "phone=?";
 			sql += ", ";
-			sql += "grs_office=?";
+			sql += "email=?";
 			sql += ", ";
-			sql += "grs_officer=?";
-			sql += ", ";
-			sql += "info_file=?";
-			sql += ", ";
-			sql += "bull_image=?";
-			sql += ", ";
-			sql += "description=?";
+			sql += "image=?";
 			sql += ", ";
 			sql += "isDeleted=?";
 			sql += ", lastModificationTime = "	+ lastModificationTime + "";
-            sql += " WHERE ID = " + bull_breed_centreDTO.iD;
+            sql += " WHERE ID = " + facial_recognizationDTO.iD;
 				
 			printSql(sql);
 
@@ -247,16 +223,13 @@ public class Bull_breed_centreDAO  implements NavigationService{
 
 			int index = 1;
 			
-			ps.setObject(index++,bull_breed_centreDTO.iD);
-			ps.setObject(index++,bull_breed_centreDTO.bullType);
-			ps.setObject(index++,bull_breed_centreDTO.breedType);
-			ps.setObject(index++,bull_breed_centreDTO.centreType);
-			ps.setObject(index++,bull_breed_centreDTO.grsOffice);
-			ps.setObject(index++,bull_breed_centreDTO.grsOfficer);
-			ps.setObject(index++,bull_breed_centreDTO.infoFile);
-			ps.setObject(index++,bull_breed_centreDTO.bullImage);
-			ps.setObject(index++,bull_breed_centreDTO.description);
-			ps.setObject(index++,bull_breed_centreDTO.isDeleted);
+			ps.setObject(index++,facial_recognizationDTO.iD);
+			ps.setObject(index++,facial_recognizationDTO.name);
+			ps.setObject(index++,facial_recognizationDTO.address);
+			ps.setObject(index++,facial_recognizationDTO.phone);
+			ps.setObject(index++,facial_recognizationDTO.email);
+			ps.setObject(index++,facial_recognizationDTO.image);
+			ps.setObject(index++,facial_recognizationDTO.isDeleted);
 			System.out.println(ps);
 			ps.executeUpdate();
 			
@@ -284,14 +257,14 @@ public class Bull_breed_centreDAO  implements NavigationService{
 
 	}
 	
-	public void deleteBull_breed_centreByID(long ID) throws Exception{
+	public void deleteFacial_recognizationByID(long ID) throws Exception{
 		Connection connection = null;
 		Statement stmt = null;
 		PreparedStatement ps = null;
 		
 		long lastModificationTime = System.currentTimeMillis();	
 		try{
-			String sql = "UPDATE bull_breed_centre";
+			String sql = "UPDATE facial_recognization";
 			
 			sql += " SET isDeleted=1,lastModificationTime="+ lastModificationTime +" WHERE ID = " + ID;
 			
@@ -325,20 +298,20 @@ public class Bull_breed_centreDAO  implements NavigationService{
 
 	
 	
-	public List<Bull_breed_centreDTO> getDTOs(Collection recordIDs, LoginDTO loginDTO){
+	public List<Facial_recognizationDTO> getDTOs(Collection recordIDs, LoginDTO loginDTO){
 		Connection connection = null;
 		ResultSet rs = null;
 		Statement stmt = null;
-		Bull_breed_centreDTO bull_breed_centreDTO = null;
-		List<Bull_breed_centreDTO> bull_breed_centreDTOList = new ArrayList<>();
+		Facial_recognizationDTO facial_recognizationDTO = null;
+		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
 		if(recordIDs.isEmpty()){
-			return bull_breed_centreDTOList;
+			return facial_recognizationDTOList;
 		}
 		try{
 			
 			String sql = "SELECT * ";
 
-			sql += " FROM bull_breed_centre";
+			sql += " FROM facial_recognization";
             
             sql += " WHERE ID IN ( ";
 
@@ -360,20 +333,17 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			rs = stmt.executeQuery(sql);
 
 			while(rs.next()){
-				bull_breed_centreDTO = new Bull_breed_centreDTO();
-				bull_breed_centreDTO.iD = rs.getLong("ID");
-				bull_breed_centreDTO.bullType = rs.getInt("bull_type");
-				bull_breed_centreDTO.breedType = rs.getInt("breed_type");
-				bull_breed_centreDTO.centreType = rs.getInt("centre_type");
-				bull_breed_centreDTO.grsOffice = rs.getInt("grs_office");
-				bull_breed_centreDTO.grsOfficer = rs.getLong("grs_officer");
-				bull_breed_centreDTO.infoFile = rs.getString("info_file");
-				bull_breed_centreDTO.bullImage = rs.getString("bull_image");
-				bull_breed_centreDTO.description = rs.getString("description");
-				bull_breed_centreDTO.isDeleted = rs.getBoolean("isDeleted");
-				System.out.println("got this DTO: " + bull_breed_centreDTO);
+				facial_recognizationDTO = new Facial_recognizationDTO();
+				facial_recognizationDTO.iD = rs.getLong("ID");
+				facial_recognizationDTO.name = rs.getString("name");
+				facial_recognizationDTO.address = rs.getString("address");
+				facial_recognizationDTO.phone = rs.getString("phone");
+				facial_recognizationDTO.email = rs.getString("email");
+				facial_recognizationDTO.image = rs.getString("image");
+				facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
+				System.out.println("got this DTO: " + facial_recognizationDTO);
 				
-				bull_breed_centreDTOList.add(bull_breed_centreDTO);
+				facial_recognizationDTOList.add(facial_recognizationDTO);
 
 			}			
 			
@@ -393,7 +363,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 				} 
 			}catch(Exception ex2){}
 		}
-		return bull_breed_centreDTOList;
+		return facial_recognizationDTOList;
 	
 	}
 	
@@ -407,7 +377,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
     	Statement stmt=null;
     	ResultSet resultSet = null;
     	
-        String sql = "SELECT ID FROM bull_breed_centre";
+        String sql = "SELECT ID FROM facial_recognization";
 
 		sql += " WHERE isDeleted = 0  order by ID desc ";
 		
@@ -447,11 +417,11 @@ public class Bull_breed_centreDAO  implements NavigationService{
     }
 	
 	//add repository
-	public List<Bull_breed_centreDTO> getAllBull_breed_centre (boolean isFirstReload)
+	public List<Facial_recognizationDTO> getAllFacial_recognization (boolean isFirstReload)
     {
-		List<Bull_breed_centreDTO> bull_breed_centreDTOList = new ArrayList<>();
+		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
 
-		String sql = "SELECT * FROM bull_breed_centre";
+		String sql = "SELECT * FROM facial_recognization";
 		sql += " WHERE ";
 	
 
@@ -475,25 +445,22 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			
 
 			while(rs.next()){
-				Bull_breed_centreDTO bull_breed_centreDTO = new Bull_breed_centreDTO();
-				bull_breed_centreDTO.iD = rs.getLong("ID");
-				bull_breed_centreDTO.bullType = rs.getInt("bull_type");
-				bull_breed_centreDTO.breedType = rs.getInt("breed_type");
-				bull_breed_centreDTO.centreType = rs.getInt("centre_type");
-				bull_breed_centreDTO.grsOffice = rs.getInt("grs_office");
-				bull_breed_centreDTO.grsOfficer = rs.getLong("grs_officer");
-				bull_breed_centreDTO.infoFile = rs.getString("info_file");
-				bull_breed_centreDTO.bullImage = rs.getString("bull_image");
-				bull_breed_centreDTO.description = rs.getString("description");
-				bull_breed_centreDTO.isDeleted = rs.getBoolean("isDeleted");
+				Facial_recognizationDTO facial_recognizationDTO = new Facial_recognizationDTO();
+				facial_recognizationDTO.iD = rs.getLong("ID");
+				facial_recognizationDTO.name = rs.getString("name");
+				facial_recognizationDTO.address = rs.getString("address");
+				facial_recognizationDTO.phone = rs.getString("phone");
+				facial_recognizationDTO.email = rs.getString("email");
+				facial_recognizationDTO.image = rs.getString("image");
+				facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
 				int i = 0;
-				long primaryKey = bull_breed_centreDTO.iD;
-				while(i < bull_breed_centreDTOList.size() && bull_breed_centreDTOList.get(i).iD < primaryKey)
+				long primaryKey = facial_recognizationDTO.iD;
+				while(i < facial_recognizationDTOList.size() && facial_recognizationDTOList.get(i).iD < primaryKey)
 				{
 					i ++;
 				}
-				bull_breed_centreDTOList.add(i,  bull_breed_centreDTO);
-				//bull_breed_centreDTOList.add(bull_breed_centreDTO);
+				facial_recognizationDTOList.add(i,  facial_recognizationDTO);
+				//facial_recognizationDTOList.add(facial_recognizationDTO);
 			}			
 		}catch(Exception ex){
 			System.out.println("Sql error: " + ex);
@@ -510,7 +477,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			}catch(Exception ex2){}
 		}
 
-		return bull_breed_centreDTOList;
+		return facial_recognizationDTOList;
     }
 	
 
@@ -524,10 +491,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 		
 		try{
 
-			String sql = "SELECT distinct bull_breed_centre.ID as ID FROM bull_breed_centre ";
-			sql += " join bull on bull_breed_centre.bull_type = bull.ID ";
-			sql += " join breed on bull_breed_centre.breed_type = breed.ID ";
-			sql += " join centre on bull_breed_centre.centre_type = centre.ID ";
+			String sql = "SELECT distinct facial_recognization.ID as ID FROM facial_recognization ";
 			
 			
 			Enumeration names = p_searchCriteria.keys();
@@ -538,7 +502,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			if(p_searchCriteria.get("AnyField")!= null && !p_searchCriteria.get("AnyField").toString().equalsIgnoreCase(""))
 			{
 				int i = 0;
-				Iterator it = Bull_breed_centreMAPS.GetInstance().java_anyfield_search_map.entrySet().iterator();
+				Iterator it = Facial_recognizationMAPS.GetInstance().java_anyfield_search_map.entrySet().iterator();
 				while(it.hasNext())
 				{
 					if( i > 0)
@@ -560,7 +524,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 				str = (String) names.nextElement();
 				value = (String)p_searchCriteria.get(str);
 		        System.out.println(str + ": " + value);
-		        if(Bull_breed_centreMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()) != null &&  !Bull_breed_centreMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equalsIgnoreCase("")
+		        if(Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()) != null &&  !Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equalsIgnoreCase("")
 		        		&& !str.equalsIgnoreCase("AnyField")
 		        		&& value != null && !value.equalsIgnoreCase(""))
 		        {
@@ -573,13 +537,13 @@ public class Bull_breed_centreDAO  implements NavigationService{
 		        	{
 		        		AllFieldSql+= " AND  ";
 		        	}
-		        	if(Bull_breed_centreMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equals("String")) 
+		        	if(Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equals("String")) 
 		        	{
-		        		AllFieldSql += "bull_breed_centre." + str.toLowerCase() + " like '%" + p_searchCriteria.get(str) + "%'";
+		        		AllFieldSql += "facial_recognization." + str.toLowerCase() + " like '%" + p_searchCriteria.get(str) + "%'";
 		        	}
 		        	else
 		        	{
-		        		AllFieldSql += "bull_breed_centre." + str.toLowerCase() + " = '" + p_searchCriteria.get(str) + "'";
+		        		AllFieldSql += "facial_recognization." + str.toLowerCase() + " = '" + p_searchCriteria.get(str) + "'";
 		        	}
 		        	i ++;
 		        }
@@ -591,7 +555,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 			
 			
 			sql += " WHERE ";
-			sql += " bull_breed_centre.isDeleted = false";
+			sql += " facial_recognization.isDeleted = false";
 			
 			
 			
@@ -605,7 +569,7 @@ public class Bull_breed_centreDAO  implements NavigationService{
 				sql += " AND " + AllFieldSql;
 			}
 			
-			sql += " order by bull_breed_centre.ID desc ";
+			sql += " order by facial_recognization.ID desc ";
 
 			printSql(sql);
 		
