@@ -118,7 +118,7 @@ public class Facial_recognizationServlet extends HttpServlet
 	private String getFileName(final Part part) 
 	{
 	    final String partHeader = part.getHeader("content-disposition");
-	    System.out.println("Part Header = {0}" +  partHeader);
+	    System.out.println("Part Header = new part {0}" +  partHeader);
 	    for (String content : part.getHeader("content-disposition").split(";")) {
 	        if (content.trim().startsWith("filename")) {
 	            return content.substring(
@@ -137,7 +137,7 @@ public class Facial_recognizationServlet extends HttpServlet
 	    InputStream filecontent = null;
 
 	    String path = getServletContext().getRealPath("/img2/");
-	    System.out.println("path we are getting is" +  path);
+	    
 	    File dir=new File(path);
 	    
 	    if(!dir.exists())
@@ -159,6 +159,7 @@ public class Facial_recognizationServlet extends HttpServlet
 			{
 	            out.write(bytes, 0, read);
 	        }
+	        System.out.println("#########file name  "+ fileName);
 	        System.out.println("New file " + fileName + " created at " + path);
 
 	    }
@@ -248,7 +249,7 @@ public class Facial_recognizationServlet extends HttpServlet
 				
 				if(PermissionRepository.checkPermissionByRoleIDAndMenuID(userDTO.roleID, MenuConstants.FACIAL_RECOGNIZATION_ADD))
 				{
-					System.out.println("going to  addFacial_recognization ");
+					System.out.println("going to new addFacial_recognization ");
 					addFacial_recognization(request, response, true);
 				}
 				else
@@ -316,7 +317,7 @@ public class Facial_recognizationServlet extends HttpServlet
 		try 
 		{
 			request.setAttribute("failureMessage", "");
-			System.out.println("");
+			System.out.println("%%%% addFacial_recognization");
 			Facial_recognizationDAO facial_recognizationDAO = new Facial_recognizationDAO();
 			Facial_recognizationDTO facial_recognizationDTO;
 			String FileNamePrefix;
@@ -390,7 +391,9 @@ public class Facial_recognizationServlet extends HttpServlet
 				if(Value.toLowerCase().endsWith(".jpg") || Value.toLowerCase().endsWith(".png") 
 					|| Value.toLowerCase().endsWith(".gif") || Value.toLowerCase().endsWith(".bmp") || Value.toLowerCase().endsWith(".ico"))
 				{
-					String FileName = FileNamePrefix + "_" + "image" + "_" + Value;
+					//edited
+					//String FileName = FileNamePrefix + "_" + "image" + "_" + Value;
+					String FileName = Value;
 					facial_recognizationDTO.image = (FileName);
 					uploadFile(filePart_image, FileName);
 				}
