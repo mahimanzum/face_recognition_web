@@ -394,7 +394,8 @@ public class Facial_recognizationServlet extends HttpServlet
 					//edited
 					//String FileName = FileNamePrefix + "_" + "image" + "_" + Value;
 					String FileName = Value;
-					facial_recognizationDTO.image = (FileName);
+					facial_recognizationDTO.image = FileName;
+					System.out.println("%%%%%passed file name" + " = " +FileName );
 					uploadFile(filePart_image, FileName);
 				}
 			}
