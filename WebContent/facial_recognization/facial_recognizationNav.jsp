@@ -13,7 +13,7 @@
 
 
 <%
-	System.out.println("Inside this new nav.jsp");
+	System.out.println("########Inside this new nav.jsp");
 	String url = request.getParameter("url");
 	String navigator = request.getParameter("navigator");
 	String pageName = request.getParameter("pageName");

@@ -376,7 +376,7 @@ public class Facial_recognizationDAO  implements NavigationService{
         Connection connection=null;
     	Statement stmt=null;
     	ResultSet resultSet = null;
-    	
+    	//here put the code
         String sql = "SELECT ID FROM facial_recognization";
 
 		sql += " WHERE isDeleted = 0  order by ID desc ";

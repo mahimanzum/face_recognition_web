@@ -101,6 +101,18 @@ public class Facial_recognizationServlet extends HttpServlet
 					request.getRequestDispatcher(Constants.ERROR_PAGE).forward(request, response);
 				}				
 			}
+			else if(actionType.equals("search_face"))
+			{
+				System.out.println("search face requested");
+				if(PermissionRepository.checkPermissionByRoleIDAndMenuID(userDTO.roleID, MenuConstants.FACIAL_RECOGNIZATION_SEARCH))
+				{
+					searchFacial_recognization(request, response);
+				}
+				else
+				{
+					request.getRequestDispatcher(Constants.ERROR_PAGE).forward(request, response);
+				}				
+			}
 		}
 		catch(Exception ex)
 		{
@@ -210,7 +222,7 @@ public class Facial_recognizationServlet extends HttpServlet
 			{
 				if(Value != null && !Value.equalsIgnoreCase(""))
 				{					
-					String FileName = "image_to_search";
+					String FileName = "test.jpg";
 
 					uploadFile(filePart_bullDatabase, FileName);
 					System.out.println("success");
@@ -220,6 +232,7 @@ public class Facial_recognizationServlet extends HttpServlet
 				
 					//RequestDispatcher rd = request.getRequestDispatcher("bull_breed_centre/bull_breed_centreReview.jsp?actionType=edit");
 					//rd.forward(request, response);
+					response.sendRedirect("Facial_recognizationServlet?actionType=search_face");
 				}	
 			}
 			else
