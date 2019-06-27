@@ -385,7 +385,7 @@ public class Facial_recognizationServlet extends HttpServlet
 			}
 			Part filePart_image =  request.getPart("image");
 			Value = getFileName(filePart_image);
-			System.out.println("image = " + Value);
+			System.out.println("new image for marking is image = " + Value);
 			if(Value != null && !Value.equalsIgnoreCase(""))
 			{
 				if(Value.toLowerCase().endsWith(".jpg") || Value.toLowerCase().endsWith(".png") 
