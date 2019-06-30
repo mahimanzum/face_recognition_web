@@ -1,6 +1,7 @@
 package facial_recognization;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.io.*;
 
 
@@ -11,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 
 
 import org.apache.log4j.Logger;
+import org.apache.poi.sl.draw.geom.Path;
 
 import login.LoginDTO;
 import permission.MenuConstants;
@@ -142,7 +144,7 @@ public class Facial_recognizationServlet extends HttpServlet
 
 	
 	
-	private void uploadFile(Part filePart, String fileName)
+	private void uploadFile(Part filePart, String fileName, String forwhat)
 	{
 
 	    OutputStream out = null;
@@ -157,7 +159,7 @@ public class Facial_recognizationServlet extends HttpServlet
 	    	dir.mkdir();
 	    	System.out.println("created directory " + path);
         }
-
+	    
 	    try 
 		{
 	        out = new FileOutputStream(new File(path + File.separator
@@ -173,6 +175,57 @@ public class Facial_recognizationServlet extends HttpServlet
 	        }
 	        System.out.println("#########file name  "+ fileName);
 	        System.out.println("New file " + fileName + " created at " + path);
+	        
+	        
+	        Process p;
+	        String conda = "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python"; 
+	        //Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
+	        //String conda = pa.toString();
+	        System.out.println("Conda path = "+conda);
+            if(forwhat.equalsIgnoreCase("test")) {
+            	//String val =  conda+" "+path+"process.py"+" "+path+" "+path+"test.jpg";
+            	//val = val.replace('\\', '/');
+            	//System.out.println("Executing command coming now" + val);
+            	//p = Runtime.getRuntime().exec(val);
+            	String[] a = new String[] {
+            		    "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python",
+            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\process.py",
+            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\", 
+            		    "test.jpg"};
+            	p = Runtime.getRuntime().exec(a);
+            	//p = Runtime.getRuntime().exec("C:\\Users\\\"REVE PC\"\\Anaconda3\\envs\\workshop\\python C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\process.py C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\  C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\test.jpg");
+            }
+            else {
+            	//String val =  conda+" "+path+"train.py"+" "+path+" "+path+fileName;
+            	//val = val.replace('\\', '/');
+            	//System.out.println("Executing command coming now2" + val);
+            	String[] a = new String[] {
+            		    "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python",
+            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\train.py",
+            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\", 
+            		    fileName};
+            	p = Runtime.getRuntime().exec(a);
+            	//p = Runtime.getRuntime().exec(val);
+            }
+            
+            BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+
+            BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+
+            // read the output from the command
+            System.out.println("Here is the standard output of the command:\n");
+            String s = null;
+            while ((s = stdInput.readLine()) != null) {
+                System.out.println(s);
+            }
+
+            // read any errors from the attempted command
+            //System.out.println("Here is the standard error of the command (if any):\n");
+            while ((s = stdError.readLine()) != null) {
+                System.out.println(s);
+            }
+
+           
 
 	    }
 		catch (IOException fne) 
@@ -224,7 +277,7 @@ public class Facial_recognizationServlet extends HttpServlet
 				{					
 					String FileName = "test.jpg";
 
-					uploadFile(filePart_bullDatabase, FileName);
+					uploadFile(filePart_bullDatabase, FileName, "test");
 					System.out.println("success");
 					//ArrayList<Bull_breed_centreDTO> bull_breed_centreDTOs = ReadXLsToArraylist(request, FileName);
 					//HttpSession session = request.getSession(true);
@@ -409,7 +462,7 @@ public class Facial_recognizationServlet extends HttpServlet
 					String FileName = Value;
 					facial_recognizationDTO.image = FileName;
 					System.out.println("%%%%%passed file name" + " = " +FileName );
-					uploadFile(filePart_image, FileName);
+					uploadFile(filePart_image, FileName, "train");
 				}
 			}
 			else
