@@ -1,5 +1,9 @@
 package facial_recognization;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -377,10 +381,54 @@ public class Facial_recognizationDAO  implements NavigationService{
     	Statement stmt=null;
     	ResultSet resultSet = null;
     	//here put the code
-        String sql = "SELECT ID FROM facial_recognization";
+    	String csvFile = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"data.csv";
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+        String ans = "";
+        
+        System.out.println("hello");
+		String currentDirectory = System.getProperty("user.dir");
+	    System.out.println("The current working directory is " + currentDirectory);
+        
+        try {
+        	br = new BufferedReader(new FileReader("C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"test_data.csv"));
+        	double test[] = new double[128];
+        	while ((line = br.readLine()) != null) {
+	            // use comma as separator
+	            String[] td = line.split(cvsSplitBy);
+	            for(int c = 1; c <td.length; c++) test[c-1] = Double.parseDouble(td[c]);
+	           }
+        	
+			br = new BufferedReader(new FileReader(csvFile));
+			while ((line = br.readLine()) != null) {
+	            // use comma as separator
+				double sm = 0.0;
+				//double temp[] = new double[128];
+	            String[] country = line.split(cvsSplitBy);
+	            for(int c = 1; c <country.length; c++) sm = sm + ((Double.parseDouble(country[c]))-test[c-1])*((Double.parseDouble(country[c]))-test[c-1]);
+	            if(sm<=0.6) {
+	            	System.out.print(sm);
+	            	System.out.println("");
+	            	System.out.println(country[0]);
+	            	ans = country[0];
+	            	break;
+	            }
+	            else sm = 0.0;
+	            }
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        
+        //String sql = "SELECT ID FROM facial_recognization";
 
-		sql += " WHERE isDeleted = 0  order by ID desc ";
-		
+		//sql += " WHERE isDeleted = 0  order by ID desc ";
+        String sql = "SELECT ID FROM facial_recognization where name like "+"\"%"+ans+"%\"";
 		printSql(sql);
 		
         try
