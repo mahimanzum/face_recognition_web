@@ -3,6 +3,7 @@ package facial_recognization;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -374,7 +375,7 @@ public class Facial_recognizationDAO  implements NavigationService{
 	
 
 	
-	public Collection getIDs(LoginDTO loginDTO) 
+	public Collection getIDs(LoginDTO loginDTO) throws IOException 
     {
         Collection data = new ArrayList();
         Connection connection=null;
@@ -382,11 +383,13 @@ public class Facial_recognizationDAO  implements NavigationService{
     	ResultSet resultSet = null;
     	//here put the code
     	String csvFile = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"data.csv";
+    	String decision = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"decision.csv";
+    	FileWriter csvWriter = new FileWriter(decision);
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
         String ans = "";
-        
+        boolean whole = true;
         System.out.println("hello");
 		String currentDirectory = System.getProperty("user.dir");
 	    System.out.println("The current working directory is " + currentDirectory);
@@ -407,7 +410,7 @@ public class Facial_recognizationDAO  implements NavigationService{
 				//double temp[] = new double[128];
 	            String[] country = line.split(cvsSplitBy);
 	            for(int c = 1; c <country.length; c++) sm = sm + ((Double.parseDouble(country[c]))-test[c-1])*((Double.parseDouble(country[c]))-test[c-1]);
-	            if(sm<=0.6) {
+	            if(sm<=0.4) {
 	            	System.out.print(sm);
 	            	System.out.println("");
 	            	System.out.println(country[0]);
@@ -416,6 +419,15 @@ public class Facial_recognizationDAO  implements NavigationService{
 	            }
 	            else sm = 0.0;
 	            }
+			br = new BufferedReader(new FileReader(decision));
+			while ((line = br.readLine()) != null) {
+	            // use comma as separator
+	            String[] td = line.split(cvsSplitBy);
+	            if(td[0].equalsIgnoreCase("no")) {
+	            	whole = false;
+	            	
+	            }
+	           }
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -424,18 +436,23 @@ public class Facial_recognizationDAO  implements NavigationService{
 			e.printStackTrace();
 		}
         
+        csvWriter.append("no");  
+        csvWriter.flush();  
+        csvWriter.close();
         
-        //String sql = "SELECT ID FROM facial_recognization";
+        String sql = "SELECT ID FROM facial_recognization";
 
-		//sql += " WHERE isDeleted = 0  order by ID desc ";
-        String sql = "SELECT ID FROM facial_recognization where name like "+"\"%"+ans+"%\"";
+		sql += " WHERE isDeleted = 0  order by ID desc ";
+        //if(!whole) 
+        	
+        sql = "SELECT ID FROM facial_recognization where name like "+"\"%"+ans+"%\"";
 		printSql(sql);
 		
         try
         {
 	        connection = DatabaseManager.getInstance().getConnection();
 	        stmt = connection.createStatement();
-	        
+	        resultSet = stmt.executeQuery(sql);
 	        for(resultSet = stmt.executeQuery(sql); resultSet.next(); data.add(resultSet.getString("ID")));
 	
 	        resultSet.close();

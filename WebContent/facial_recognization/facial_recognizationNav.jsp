@@ -113,7 +113,7 @@
 				alert('failed ' + this.status);
 			}
 		  };
-		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload', true);
+		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload',true);
 		xhttp.send(formData);
 	}
 

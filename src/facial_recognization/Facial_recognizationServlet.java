@@ -285,7 +285,9 @@ public class Facial_recognizationServlet extends HttpServlet
 				
 					//RequestDispatcher rd = request.getRequestDispatcher("bull_breed_centre/bull_breed_centreReview.jsp?actionType=edit");
 					//rd.forward(request, response);
+					
 					response.sendRedirect("Facial_recognizationServlet?actionType=search_face");
+					//response.setHeader("Refresh", "0; URL=http://localhost:8080/dls2/Facial_recognizationServlet?actionType=search");
 				}	
 			}
 			else
@@ -622,6 +624,7 @@ public class Facial_recognizationServlet extends HttpServlet
         	System.out.println("Going to facial_recognization/facial_recognizationSearchForm.jsp");
         	rd = request.getRequestDispatcher("facial_recognization/facial_recognizationSearchForm.jsp");
         }
+        //response.setHeader("Refresh", "0; URL=http://localhost:8080/dls2/Facial_recognizationServlet?actionType=search");
 		rd.forward(request, response);
 	}
 	
