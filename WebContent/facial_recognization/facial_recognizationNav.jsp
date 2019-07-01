@@ -101,6 +101,7 @@
 	
 	
 		var xhttp = new XMLHttpRequest();
+		/*
 		xhttp.onreadystatechange = function() 
 		{
 			if (this.readyState == 4 && this.status == 200) 
@@ -113,8 +114,21 @@
 				alert('failed ' + this.status);
 			}
 		  };
-		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload',true);
+		 */
+		 xhttp.onreadystatechange = function() {
+			  if (this.readyState === 4) {
+			    //var response = JSON.parse(this.responseText);
+			      if (this.status === 200) {
+			         console.log('successful');
+			         location.reload();
+			      } else {
+			         console.log('failed');
+			      }
+			  }
+		};
+		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload',false);
 		xhttp.send(formData);
+		
 	}
 
 	function setPageNo(res)
