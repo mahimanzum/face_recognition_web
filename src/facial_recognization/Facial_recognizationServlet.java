@@ -178,7 +178,8 @@ public class Facial_recognizationServlet extends HttpServlet
 	        
 	        
 	        Process p;
-	        String conda = "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python"; 
+	        //String conda = "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python"; 
+	        String conda = "/home/mahim/anaconda3/envs/workshop/bin/python"; 
 	        //Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
 	        //String conda = pa.toString();
 	        System.out.println("Conda path = "+conda);
@@ -188,9 +189,9 @@ public class Facial_recognizationServlet extends HttpServlet
             	//System.out.println("Executing command coming now" + val);
             	//p = Runtime.getRuntime().exec(val);
             	String[] a = new String[] {
-            		    "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python",
-            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\process.py",
-            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\", 
+            			conda,
+            			path+"process.py",
+            		    path,
             		    "test.jpg"};
             	p = Runtime.getRuntime().exec(a);
             	//p = Runtime.getRuntime().exec("C:\\Users\\\"REVE PC\"\\Anaconda3\\envs\\workshop\\python C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\process.py C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\  C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\test.jpg");
@@ -200,9 +201,9 @@ public class Facial_recognizationServlet extends HttpServlet
             	//val = val.replace('\\', '/');
             	//System.out.println("Executing command coming now2" + val);
             	String[] a = new String[] {
-            		    "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python",
-            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\train.py",
-            		    "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\", 
+            			conda,
+            		    path+"train.py",
+            		    path, 
             		    fileName};
             	p = Runtime.getRuntime().exec(a);
             	//p = Runtime.getRuntime().exec(val);

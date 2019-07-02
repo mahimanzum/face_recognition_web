@@ -10,6 +10,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
+
+import javax.servlet.http.HttpServlet;
+
 import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
@@ -24,7 +27,7 @@ import user.UserDAO;
 import user.UserRepository;
 
 
-public class Facial_recognizationDAO  implements NavigationService{
+public class Facial_recognizationDAO  implements NavigationService {
 	
 	Logger logger = Logger.getLogger(getClass());
 	
@@ -382,8 +385,10 @@ public class Facial_recognizationDAO  implements NavigationService{
     	Statement stmt=null;
     	ResultSet resultSet = null;
     	//here put the code
-    	String csvFile = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"data.csv";
-    	String decision = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"decision.csv";
+    	//String path = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\";
+    	String path = "/usr/local/apache-tomcat-9.0.14/webapps/facialrecognition/img2/";
+    	String csvFile =path +"data.csv";
+    	String decision = path+"decision.csv";
     	FileWriter csvWriter = new FileWriter(decision);
         BufferedReader br = null;
         String line = "";
@@ -395,30 +400,38 @@ public class Facial_recognizationDAO  implements NavigationService{
 	    System.out.println("The current working directory is " + currentDirectory);
         
         try {
-        	br = new BufferedReader(new FileReader("C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\"+"test_data.csv"));
+        	br = new BufferedReader(new FileReader(path+"test_data.csv"));
         	double test[] = new double[128];
         	while ((line = br.readLine()) != null) {
 	            // use comma as separator
 	            String[] td = line.split(cvsSplitBy);
 	            for(int c = 1; c <td.length; c++) test[c-1] = Double.parseDouble(td[c]);
 	           }
-        	
+        	double distan = 0;
 			br = new BufferedReader(new FileReader(csvFile));
+			double dis = 10000;
 			while ((line = br.readLine()) != null) {
 	            // use comma as separator
 				double sm = 0.0;
 				//double temp[] = new double[128];
 	            String[] country = line.split(cvsSplitBy);
 	            for(int c = 1; c <country.length; c++) sm = sm + ((Double.parseDouble(country[c]))-test[c-1])*((Double.parseDouble(country[c]))-test[c-1]);
-	            if(sm<=0.4) {
-	            	System.out.print(sm);
-	            	System.out.println("");
-	            	System.out.println(country[0]);
+	            if(sm<=dis) {
+	            	dis = sm;
+	            	distan = dis;
 	            	ans = country[0];
-	            	break;
+	            	//System.out.println(ans);
+	            	//System.out.print(dis);
 	            }
-	            else sm = 0.0;
 	            }
+			System.out.println(ans);
+			System.out.print(distan);
+			
+			if(distan>0.2) {
+				ans = "";
+			}
+        	System.out.println("");
+        	System.out.println(ans);
 			br = new BufferedReader(new FileReader(decision));
 			while ((line = br.readLine()) != null) {
 	            // use comma as separator
@@ -445,7 +458,7 @@ public class Facial_recognizationDAO  implements NavigationService{
 		sql += " WHERE isDeleted = 0  order by ID desc ";
         //if(!whole) 
         	
-        sql = "SELECT ID FROM facial_recognization where name like "+"\"%"+ans+"%\"";
+        sql = "SELECT ID FROM facial_recognization where image like "+"\"%"+ans+"%\"";
 		printSql(sql);
 		
         try
