@@ -150,8 +150,8 @@ public class Facial_recognizationServlet extends HttpServlet
 	    OutputStream out = null;
 	    InputStream filecontent = null;
 
-	    String path = getServletContext().getRealPath("/img2/");
-	    
+	    String path = getServletContext().getRealPath("/img2");
+	    path = path + '/';
 	    File dir=new File(path);
 	    
 	    if(!dir.exists())
@@ -178,7 +178,7 @@ public class Facial_recognizationServlet extends HttpServlet
 	        
 	        
 	        Process p;
-	        String conda = "C:\\Users\\REVE PC\\Anaconda3\\envs\\workshop\\python"; 
+	        String conda = "C:/Users/REVE PC/Anaconda3/envs/workshop/python"; 
 	        //String conda = "/home/mahim/anaconda3/envs/workshop/bin/python"; 
 	        //Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
 	        //String conda = pa.toString();

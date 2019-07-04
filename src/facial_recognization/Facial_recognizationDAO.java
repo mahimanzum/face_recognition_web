@@ -385,8 +385,9 @@ public class Facial_recognizationDAO  implements NavigationService {
     	Statement stmt=null;
     	ResultSet resultSet = null;
     	//here put the code
-    	String path = "C:\\Users\\REVE PC\\eclipse-workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\dls2\\img2\\";
-    	//String path = "/usr/local/apache-tomcat-9.0.14/webapps/facialrecognition/img2/";
+    	String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
+    	//String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
+    	
     	String csvFile =path +"data.csv";
     	String decision = path+"decision.csv";
     	FileWriter csvWriter = new FileWriter(decision);
@@ -427,7 +428,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 			System.out.println(ans);
 			System.out.print(distan);
 			
-			if(distan>0.2){
+			if(distan>0.22){
 				ans = "#$#";
 			}
         	System.out.println("");
