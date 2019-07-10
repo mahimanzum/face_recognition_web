@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="face_recognition_web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="face_recognition_web" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="face_recognition_web/web/Web" />
+    </root>
+  </artifact>
+</component>
