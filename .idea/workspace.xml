@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/face_recognition_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
-    </list>
+    <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +20,8 @@
       <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-578">
-              <caret line="476" column="34" lean-forward="true" selection-start-line="476" selection-start-column="34" selection-end-line="476" selection-end-column="34" />
+            <state relative-caret-position="306">
+              <caret line="513" column="9" lean-forward="true" selection-start-line="513" selection-start-column="9" selection-end-line="513" selection-end-column="9" />
               <folding>
                 <marker date="1562563943792" expanded="true" signature="971:1041" ph="UPDATE vbSeq... " />
                 <marker date="1562563943792" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
@@ -385,12 +379,12 @@
       <workItem from="1562495908333" duration="489000" />
       <workItem from="1562496436486" duration="26000" />
       <workItem from="1562559802747" duration="6426000" />
-      <workItem from="1562735487609" duration="6251000" />
+      <workItem from="1562735487609" duration="6433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20244000" />
+    <option name="totallyTimeSpent" value="20426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-312" width="1936" height="1056" extended-state="6" />
@@ -636,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-578">
-          <caret line="476" column="34" lean-forward="true" selection-start-line="476" selection-start-column="34" selection-end-line="476" selection-end-column="34" />
+        <state relative-caret-position="306">
+          <caret line="513" column="9" lean-forward="true" selection-start-line="513" selection-start-column="9" selection-end-line="513" selection-end-column="9" />
           <folding>
             <marker date="1562563943792" expanded="true" signature="971:1041" ph="UPDATE vbSeq... " />
             <marker date="1562563943792" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
