@@ -705,9 +705,9 @@ public class Facial_recognizationDAO  implements NavigationService {
 		Statement stmt = null;
 		ResultSet rs = null;
 		//here put the code
-		//String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+		String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
 		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
-		String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
+		//String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
 		String csvFile = path + "data.csv";
 		String decision = path + "decision.txt";
 		BufferedReader br = null;
