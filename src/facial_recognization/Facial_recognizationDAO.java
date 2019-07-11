@@ -32,35 +32,32 @@ public class Facial_recognizationDAO  implements NavigationService {
 	Logger logger = Logger.getLogger(getClass());
 
 
-	private void printSql(String sql)
-	{
+	private void printSql(String sql) {
 		System.out.println("sql: " + sql);
 	}
 
 
-	private void recordUpdateTime(Connection connection, PreparedStatement ps, long lastModificationTime) throws SQLException
-	{
+	private void recordUpdateTime(Connection connection, PreparedStatement ps, long lastModificationTime) throws SQLException {
 		String query = "UPDATE vbSequencer SET table_LastModificationTime=? WHERE table_name=?";
 		ps = connection.prepareStatement(query);
-		ps.setLong(1,lastModificationTime);
-		ps.setString(2,"facial_recognization");
+		ps.setLong(1, lastModificationTime);
+		ps.setString(2, "facial_recognization");
 		ps.execute();
 		ps.close();
 	}
 
 
-	public void addFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception{
+	public void addFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception {
 
 		Connection connection = null;
 		PreparedStatement ps = null;
 
 		long lastModificationTime = System.currentTimeMillis();
 
-		try{
+		try {
 			connection = DatabaseManager.getInstance().getConnection();
 
-			if(connection == null)
-			{
+			if (connection == null) {
 				System.out.println("nullconn");
 			}
 
@@ -106,17 +103,15 @@ public class Facial_recognizationDAO  implements NavigationService {
 			ps = connection.prepareStatement(sql);
 
 
-
-
 			int index = 1;
 
-			ps.setObject(index++,facial_recognizationDTO.iD);
-			ps.setObject(index++,facial_recognizationDTO.name);
-			ps.setObject(index++,facial_recognizationDTO.address);
-			ps.setObject(index++,facial_recognizationDTO.phone);
-			ps.setObject(index++,facial_recognizationDTO.email);
-			ps.setObject(index++,facial_recognizationDTO.image);
-			ps.setObject(index++,facial_recognizationDTO.isDeleted);
+			ps.setObject(index++, facial_recognizationDTO.iD);
+			ps.setObject(index++, facial_recognizationDTO.name);
+			ps.setObject(index++, facial_recognizationDTO.address);
+			ps.setObject(index++, facial_recognizationDTO.phone);
+			ps.setObject(index++, facial_recognizationDTO.email);
+			ps.setObject(index++, facial_recognizationDTO.image);
+			ps.setObject(index++, facial_recognizationDTO.isDeleted);
 			ps.setObject(index++, lastModificationTime);
 
 			System.out.println(ps);
@@ -125,30 +120,32 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			recordUpdateTime(connection, ps, lastModificationTime);
 
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("ex = " + ex);
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (ps != null) {
 					ps.close();
 				}
-			} catch(Exception e){}
-			try{
-				if(connection != null){
+			} catch (Exception e) {
+			}
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 	}
 
 	//need another getter for repository
-	public Facial_recognizationDTO getFacial_recognizationDTOByID (long ID) throws Exception{
+	public Facial_recognizationDTO getFacial_recognizationDTOByID(long ID) throws Exception {
 		Connection connection = null;
 		ResultSet rs = null;
 		Statement stmt = null;
 		Facial_recognizationDTO facial_recognizationDTO = null;
-		try{
+		try {
 
 			String sql = "SELECT * ";
 
@@ -164,7 +161,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			rs = stmt.executeQuery(sql);
 
-			if(rs.next()){
+			if (rs.next()) {
 				facial_recognizationDTO = new Facial_recognizationDTO();
 
 				facial_recognizationDTO.iD = rs.getLong("ID");
@@ -177,31 +174,33 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			}
 
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (stmt != null) {
 					stmt.close();
 				}
-			} catch (Exception e){}
+			} catch (Exception e) {
+			}
 
-			try{
-				if (connection != null){
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 		return facial_recognizationDTO;
 	}
 
-	public void updateFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception{
+	public void updateFacial_recognization(Facial_recognizationDTO facial_recognizationDTO) throws Exception {
 
 		Connection connection = null;
 		PreparedStatement ps = null;
 
 		long lastModificationTime = System.currentTimeMillis();
-		try{
+		try {
 			connection = DatabaseManager.getInstance().getConnection();
 
 			String sql = "UPDATE facial_recognization";
@@ -220,7 +219,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 			sql += "image=?";
 			sql += ", ";
 			sql += "isDeleted=?";
-			sql += ", lastModificationTime = "	+ lastModificationTime + "";
+			sql += ", lastModificationTime = " + lastModificationTime + "";
 			sql += " WHERE ID = " + facial_recognizationDTO.iD;
 
 			printSql(sql);
@@ -228,94 +227,92 @@ public class Facial_recognizationDAO  implements NavigationService {
 			ps = connection.prepareStatement(sql);
 
 
-
 			int index = 1;
 
-			ps.setObject(index++,facial_recognizationDTO.iD);
-			ps.setObject(index++,facial_recognizationDTO.name);
-			ps.setObject(index++,facial_recognizationDTO.address);
-			ps.setObject(index++,facial_recognizationDTO.phone);
-			ps.setObject(index++,facial_recognizationDTO.email);
-			ps.setObject(index++,facial_recognizationDTO.image);
-			ps.setObject(index++,facial_recognizationDTO.isDeleted);
+			ps.setObject(index++, facial_recognizationDTO.iD);
+			ps.setObject(index++, facial_recognizationDTO.name);
+			ps.setObject(index++, facial_recognizationDTO.address);
+			ps.setObject(index++, facial_recognizationDTO.phone);
+			ps.setObject(index++, facial_recognizationDTO.email);
+			ps.setObject(index++, facial_recognizationDTO.image);
+			ps.setObject(index++, facial_recognizationDTO.isDeleted);
 			System.out.println(ps);
 			ps.executeUpdate();
-
-
 
 
 			recordUpdateTime(connection, ps, lastModificationTime);
 
 
-
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (ps != null) {
 					ps.close();
 				}
-			} catch(Exception e){}
-			try{
-				if(connection != null){
+			} catch (Exception e) {
+			}
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 
 	}
 
-	public void deleteFacial_recognizationByID(long ID) throws Exception{
+	public void deleteFacial_recognizationByID(long ID) throws Exception {
 		Connection connection = null;
 		Statement stmt = null;
 		PreparedStatement ps = null;
 
 		long lastModificationTime = System.currentTimeMillis();
-		try{
+		try {
 			String sql = "UPDATE facial_recognization";
 
-			sql += " SET isDeleted=1,lastModificationTime="+ lastModificationTime +" WHERE ID = " + ID;
+			sql += " SET isDeleted=1,lastModificationTime=" + lastModificationTime + " WHERE ID = " + ID;
 
 			printSql(sql);
 
 			connection = DatabaseManager.getInstance().getConnection();
-			stmt  = connection.createStatement();
+			stmt = connection.createStatement();
 			stmt.execute(sql);
-
 
 
 			recordUpdateTime(connection, ps, lastModificationTime);
 
 
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (stmt != null) {
 					stmt.close();
 				}
-			} catch (Exception e){}
+			} catch (Exception e) {
+			}
 
-			try{
-				if (connection != null){
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 	}
 
 
-
-	public List<Facial_recognizationDTO> getDTOs(Collection recordIDs, LoginDTO loginDTO){
+	public List<Facial_recognizationDTO> getDTOs(Collection recordIDs, LoginDTO loginDTO) {
 		Connection connection = null;
 		ResultSet rs = null;
 		Statement stmt = null;
 		Facial_recognizationDTO facial_recognizationDTO = null;
 		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
-		if(recordIDs.isEmpty()){
+		if (recordIDs.isEmpty()) {
 			return facial_recognizationDTOList;
 		}
-		try{
+		try {
 
 			String sql = "SELECT * ";
 
@@ -323,13 +320,13 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			sql += " WHERE ID IN ( ";
 
-			for(int i = 0;i<recordIDs.size();i++){
-				if(i!=0){
-					sql+=",";
+			for (int i = 0; i < recordIDs.size(); i++) {
+				if (i != 0) {
+					sql += ",";
 				}
-				sql+=((ArrayList)recordIDs).get(i);
+				sql += ((ArrayList) recordIDs).get(i);
 			}
-			sql+=")  order by ID desc";
+			sql += ")  order by ID desc";
 
 			printSql(sql);
 
@@ -340,7 +337,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			rs = stmt.executeQuery(sql);
 
-			while(rs.next()){
+			while (rs.next()) {
 				facial_recognizationDTO = new Facial_recognizationDTO();
 				facial_recognizationDTO.iD = rs.getLong("ID");
 				facial_recognizationDTO.name = rs.getString("name");
@@ -355,42 +352,41 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			}
 
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("got this database error: " + ex);
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (stmt != null) {
 					stmt.close();
 				}
-			} catch (Exception e){}
+			} catch (Exception e) {
+			}
 
-			try{
-				if (connection != null){
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 		return facial_recognizationDTOList;
 
 	}
 
 
-
-
-	public Collection getIDs(LoginDTO loginDTO) throws IOException
-	{
+	public Collection getIDs(LoginDTO loginDTO) throws IOException {
 		Collection data = new ArrayList();
-		Connection connection=null;
-		Statement stmt=null;
+		Connection connection = null;
+		Statement stmt = null;
 		ResultSet resultSet = null;
 		//here put the code
 		String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
 		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
 		//String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
 
-		String csvFile =path +"data.csv";
-		String decision = path+"decision.txt";
+		String csvFile = path + "data.csv";
+		String decision = path + "decision.txt";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -401,12 +397,12 @@ public class Facial_recognizationDAO  implements NavigationService {
 		System.out.println("The current working directory is " + currentDirectory);
 		boolean no_found = false;
 		try {
-			br = new BufferedReader(new FileReader(path+"test_data.csv"));
+			br = new BufferedReader(new FileReader(path + "test_data.csv"));
 			double test[] = new double[128];
 			while ((line = br.readLine()) != null) {
 				// use comma as separator
 				String[] td = line.split(cvsSplitBy);
-				for(int c = 1; c <td.length; c++) test[c-1] = Double.parseDouble(td[c]);
+				for (int c = 1; c < td.length; c++) test[c - 1] = Double.parseDouble(td[c]);
 			}
 			double distan = 0;
 			br = new BufferedReader(new FileReader(csvFile));
@@ -416,8 +412,9 @@ public class Facial_recognizationDAO  implements NavigationService {
 				double sm = 0.0;
 				//double temp[] = new double[128];
 				String[] country = line.split(cvsSplitBy);
-				for(int c = 1; c <country.length; c++) sm = sm + ((Double.parseDouble(country[c]))-test[c-1])*((Double.parseDouble(country[c]))-test[c-1]);
-				if(sm<=dis) {
+				for (int c = 1; c < country.length; c++)
+					sm = sm + ((Double.parseDouble(country[c])) - test[c - 1]) * ((Double.parseDouble(country[c])) - test[c - 1]);
+				if (sm <= dis) {
 					dis = sm;
 					distan = dis;
 					ans = country[0];
@@ -428,26 +425,26 @@ public class Facial_recognizationDAO  implements NavigationService {
 			System.out.println(ans);
 			System.out.print(distan);
 
-			if(distan>0.22){
+			if (distan > 0.22) {
 				ans = "#$#";
 			}
 
 
-		}catch (IOException e) {
+		} catch (IOException e) {
 			// TODO Auto-generated catch block 
 			e.printStackTrace();
 		}
 		char def = 'c';
-		try{
+		try {
 			FileReader fileReader = new FileReader(decision);
 			int ch = fileReader.read();
-			System.out.println("line 443 also yes pantho comes here" );
+			System.out.println("line 443 also yes pantho comes here");
 			System.out.print(ch);
-			while(ch != -1) {
-				System.out.print((char)ch);
+			while (ch != -1) {
+				System.out.print((char) ch);
 				System.out.println("line 447 here comes in the file");
-				def = (char)ch;
-				if((char)ch == '0') {
+				def = (char) ch;
+				if ((char) ch == '0') {
 					ans = "";
 					no_found = true;
 					break;
@@ -467,16 +464,14 @@ public class Facial_recognizationDAO  implements NavigationService {
 		try {
 			FileWriter fileWriter = new FileWriter(decision);
 			String fileContent = "0";
-			if(def == '1') {
+			if (def == '1') {
 				fileContent = "0";
-			}
-			else if(def == '2') {
+			} else if (def == '2') {
 				fileContent = "1";
-			}
-			else if(def == '0') {
+			} else if (def == '0') {
 				fileContent = "0";
 			}
-			System.out.println("Line 469"+ fileContent+"def = ");
+			System.out.println("Line 469" + fileContent + "def = ");
 			System.out.print(def);
 			fileWriter.write(fileContent);
 			fileWriter.close();
@@ -494,56 +489,56 @@ public class Facial_recognizationDAO  implements NavigationService {
 		sql += " WHERE isDeleted = 0  order by ID desc ";
 		//if(!whole)
 
-		sql = "SELECT ID FROM facial_recognization where image like "+"\"%"+ans+"%\"";
+		sql = "SELECT ID FROM facial_recognization where image like " + "\"%" + ans + "%\"";
 		printSql(sql);
 
-		try
-		{
+		try {
 			connection = DatabaseManager.getInstance().getConnection();
 			stmt = connection.createStatement();
 			resultSet = stmt.executeQuery(sql);
-			for(resultSet = stmt.executeQuery(sql); resultSet.next(); data.add(resultSet.getString("ID")));
+			for (resultSet = stmt.executeQuery(sql); resultSet.next(); data.add(resultSet.getString("ID"))) ;
 
 			resultSet.close();
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			logger.fatal("DAO " + e.toString(), e);
-		}
-		finally
-		{
-			try
-			{
-				if(resultSet!= null && !resultSet.isClosed())
-				{
+		} finally {
+			try {
+				if (resultSet != null && !resultSet.isClosed()) {
 					resultSet.close();
 				}
-			}
-			catch(Exception ex)
-			{
+			} catch (Exception ex) {
 
 			}
-			try{if (stmt != null){stmt.close();}}catch (Exception e){}
-			try{if (connection != null){DatabaseManager.getInstance().freeConnection(connection);}}
-			catch (Exception e){logger.fatal("DAO finally :" + e.toString());}
+			try {
+				if (stmt != null) {
+					stmt.close();
+				}
+			} catch (Exception e) {
+			}
+			try {
+				if (connection != null) {
+					DatabaseManager.getInstance().freeConnection(connection);
+				}
+			} catch (Exception e) {
+				logger.fatal("DAO finally :" + e.toString());
+			}
 		}
 		return data;
 	}
 
 	//add repository
-	public List<Facial_recognizationDTO> getAllFacial_recognization (boolean isFirstReload)
-	{
+	public List<Facial_recognizationDTO> getAllFacial_recognization(boolean isFirstReload) {
 		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
 
 		String sql = "SELECT * FROM facial_recognization";
 		sql += " WHERE ";
 
 
-		if(isFirstReload){
-			sql+=" isDeleted =  0";
+		if (isFirstReload) {
+			sql += " isDeleted =  0";
 		}
-		if(!isFirstReload){
-			sql+=" lastModificationTime >= " + RepositoryManager.lastModifyTime;
+		if (!isFirstReload) {
+			sql += " lastModificationTime >= " + RepositoryManager.lastModifyTime;
 		}
 		printSql(sql);
 
@@ -552,13 +547,13 @@ public class Facial_recognizationDAO  implements NavigationService {
 		ResultSet rs = null;
 
 
-		try{
+		try {
 			connection = DatabaseManager.getInstance().getConnection();
 			stmt = connection.createStatement();
 			rs = stmt.executeQuery(sql);
 
 
-			while(rs.next()){
+			while (rs.next()) {
 				Facial_recognizationDTO facial_recognizationDTO = new Facial_recognizationDTO();
 				facial_recognizationDTO.iD = rs.getLong("ID");
 				facial_recognizationDTO.name = rs.getString("name");
@@ -569,41 +564,40 @@ public class Facial_recognizationDAO  implements NavigationService {
 				facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
 				int i = 0;
 				long primaryKey = facial_recognizationDTO.iD;
-				while(i < facial_recognizationDTOList.size() && facial_recognizationDTOList.get(i).iD < primaryKey)
-				{
-					i ++;
+				while (i < facial_recognizationDTOList.size() && facial_recognizationDTOList.get(i).iD < primaryKey) {
+					i++;
 				}
-				facial_recognizationDTOList.add(i,  facial_recognizationDTO);
+				facial_recognizationDTOList.add(i, facial_recognizationDTO);
 				//facial_recognizationDTOList.add(facial_recognizationDTO);
 			}
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (stmt != null) {
 					stmt.close();
 				}
-			} catch (Exception e){}
-			try{
-				if (connection != null){
+			} catch (Exception e) {
+			}
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 
 		return facial_recognizationDTOList;
 	}
 
 
-
-	public Collection getIDsWithSearchCriteria(Hashtable p_searchCriteria, LoginDTO loginDTO) throws Exception
-	{
+	public Collection getIDsWithSearchCriteria(Hashtable p_searchCriteria, LoginDTO loginDTO) throws Exception {
 		System.out.println("table: " + p_searchCriteria);
 		List<Long> idList = new ArrayList<>();
 		Connection connection = null;
 		PreparedStatement ps = null;
 
-		try{
+		try {
 
 			String sql = "SELECT distinct facial_recognization.ID as ID FROM facial_recognization ";
 
@@ -613,19 +607,16 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			String AnyfieldSql = "(";
 
-			if(p_searchCriteria.get("AnyField")!= null && !p_searchCriteria.get("AnyField").toString().equalsIgnoreCase(""))
-			{
+			if (p_searchCriteria.get("AnyField") != null && !p_searchCriteria.get("AnyField").toString().equalsIgnoreCase("")) {
 				int i = 0;
 				Iterator it = Facial_recognizationMAPS.GetInstance().java_anyfield_search_map.entrySet().iterator();
-				while(it.hasNext())
-				{
-					if( i > 0)
-					{
-						AnyfieldSql+= " OR  ";
+				while (it.hasNext()) {
+					if (i > 0) {
+						AnyfieldSql += " OR  ";
 					}
-					Map.Entry pair = (Map.Entry)it.next();
-					AnyfieldSql+= pair.getKey() + " like '%" + p_searchCriteria.get("AnyField").toString() + "%'";
-					i ++;
+					Map.Entry pair = (Map.Entry) it.next();
+					AnyfieldSql += pair.getKey() + " like '%" + p_searchCriteria.get("AnyField").toString() + "%'";
+					i++;
 				}
 			}
 			AnyfieldSql += ")";
@@ -633,33 +624,26 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 			String AllFieldSql = "(";
 			int i = 0;
-			while(names.hasMoreElements())
-			{
+			while (names.hasMoreElements()) {
 				str = (String) names.nextElement();
-				value = (String)p_searchCriteria.get(str);
+				value = (String) p_searchCriteria.get(str);
 				System.out.println(str + ": " + value);
-				if(Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()) != null &&  !Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equalsIgnoreCase("")
+				if (Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()) != null && !Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equalsIgnoreCase("")
 						&& !str.equalsIgnoreCase("AnyField")
-						&& value != null && !value.equalsIgnoreCase(""))
-				{
-					if(p_searchCriteria.get(str).equals("any"))
-					{
+						&& value != null && !value.equalsIgnoreCase("")) {
+					if (p_searchCriteria.get(str).equals("any")) {
 						continue;
 					}
 
-					if( i > 0)
-					{
-						AllFieldSql+= " AND  ";
+					if (i > 0) {
+						AllFieldSql += " AND  ";
 					}
-					if(Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equals("String"))
-					{
+					if (Facial_recognizationMAPS.GetInstance().java_allfield_type_map.get(str.toLowerCase()).equals("String")) {
 						AllFieldSql += "facial_recognization." + str.toLowerCase() + " like '%" + p_searchCriteria.get(str) + "%'";
-					}
-					else
-					{
+					} else {
 						AllFieldSql += "facial_recognization." + str.toLowerCase() + " = '" + p_searchCriteria.get(str) + "'";
 					}
-					i ++;
+					i++;
 				}
 			}
 
@@ -672,14 +656,11 @@ public class Facial_recognizationDAO  implements NavigationService {
 			sql += " facial_recognization.isDeleted = false";
 
 
-
-			if(!AnyfieldSql.equals("()"))
-			{
+			if (!AnyfieldSql.equals("()")) {
 				sql += " AND " + AnyfieldSql;
 
 			}
-			if(!AllFieldSql.equals("()"))
-			{
+			if (!AllFieldSql.equals("()")) {
 				sql += " AND " + AllFieldSql;
 			}
 
@@ -691,29 +672,124 @@ public class Facial_recognizationDAO  implements NavigationService {
 			ps = connection.prepareStatement(sql);
 
 			ResultSet rs = ps.executeQuery();
-			while(rs.next()){
+			while (rs.next()) {
 				idList.add(rs.getLong("ID"));
 			}
 
 
-		}catch(Exception ex){
+		} catch (Exception ex) {
 			System.out.println("Sql error: " + ex);
-		}finally{
-			try{
+		} finally {
+			try {
 				if (ps != null) {
 					ps.close();
 				}
-			} catch (Exception e){}
-			try{
-				if (connection != null){
+			} catch (Exception e) {
+			}
+			try {
+				if (connection != null) {
 					DatabaseManager.getInstance().freeConnection(connection);
 				}
-			}catch(Exception ex2){}
+			} catch (Exception ex2) {
+			}
 		}
 		return idList;
 	}
 
+	public List<Facial_recognizationDTO> getImageIDDTOLiist() throws Exception {
+		Collection data = new ArrayList();
+
+		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
+
+		Connection connection = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		//here put the code
+		//String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
+		String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
+		String csvFile = path + "data.csv";
+		String decision = path + "decision.txt";
+		BufferedReader br = null;
+		String line = "";
+		String cvsSplitBy = ",";
+		String ans = "";
+		boolean whole = true;
+		System.out.println("hello");
+		String currentDirectory = System.getProperty("user.dir");
+		System.out.println("The current working directory is " + currentDirectory);
+		boolean no_found = false;
+		try {
+			br = new BufferedReader(new FileReader(path + "test_data.csv"));
+			double test[] = new double[128];
+			while ((line = br.readLine()) != null) {
+				// use comma as separator
+				String[] td = line.split(cvsSplitBy);
+				for (int c = 1; c < td.length; c++) test[c - 1] = Double.parseDouble(td[c]);
+			}
+			double distan = 0;
+			br = new BufferedReader(new FileReader(csvFile));
+			double dis = 10000;
+			while ((line = br.readLine()) != null) {
+				// use comma as separator
+				double sm = 0.0;
+				//double temp[] = new double[128];
+				String[] country = line.split(cvsSplitBy);
+				for (int c = 1; c < country.length; c++)
+					sm = sm + ((Double.parseDouble(country[c])) - test[c - 1]) * ((Double.parseDouble(country[c])) - test[c - 1]);
+				if (sm <= dis) {
+					dis = sm;
+					distan = dis;
+					ans = country[0];
+					//System.out.println(ans);
+					//System.out.print(dis);
+				}
+			}
+			System.out.println(ans);
+			System.out.print(distan);
+
+			if (distan > 0.22) {
+				ans = "#$#";
+			}
 
 
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		char def = 'c';
+
+		String sql = "SELECT ID FROM facial_recognization";
+
+		sql += " WHERE isDeleted = 0  order by ID desc ";
+		//if(!whole)
+
+		sql = "SELECT * FROM facial_recognization where image like " + "\"%" + ans + "%\"";
+		printSql(sql);
+
+		try {
+			connection = DatabaseManager.getInstance().getConnection();
+			stmt = connection.createStatement();
+			rs = stmt.executeQuery(sql);
+			if (rs.next()) {
+				Facial_recognizationDTO facial_recognizationDTO = new Facial_recognizationDTO();
+				facial_recognizationDTO.iD = rs.getLong("ID");
+				facial_recognizationDTO.name = rs.getString("name");
+				facial_recognizationDTO.address = rs.getString("address");
+				facial_recognizationDTO.phone = rs.getString("phone");
+				facial_recognizationDTO.email = rs.getString("email");
+				facial_recognizationDTO.image = rs.getString("image");
+				facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
+				facial_recognizationDTOList.add(facial_recognizationDTO);
+				rs.close();
+			}
+
+		} catch (Exception e) {
+			logger.fatal("DAO " + e.toString(), e);
+		}
+		return facial_recognizationDTOList;
+	}
 }
+
+
 	

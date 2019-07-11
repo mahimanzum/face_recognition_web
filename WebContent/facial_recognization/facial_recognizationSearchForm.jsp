@@ -11,7 +11,7 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="java.text.SimpleDateFormat"%>
 <%@ page import="java.util.Date"%>
-
+<%@ page import="java.lang.String"%>
 
 
 <%@ page import="pb.*"%>
@@ -21,7 +21,6 @@
 <%@page import="language.LM"%>
 <%@page import="login.LoginDTO"%>
 
-
 <%
 LoginDTO loginDTO = (LoginDTO) request.getSession(true).getAttribute(SessionConstants.USER_LOGIN);
 String actionName = "edit";
@@ -30,6 +29,7 @@ if(failureMessage == null || failureMessage.isEmpty())
 {
 	failureMessage = "";	
 }
+
 out.println("<input type='hidden' id='failureMessage_general' value='" + failureMessage + "'/>");
 String value = "";
 String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);

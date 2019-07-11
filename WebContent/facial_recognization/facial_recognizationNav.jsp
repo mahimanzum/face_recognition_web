@@ -120,14 +120,16 @@
 			  if (this.readyState === 4) {
 			    //var response = JSON.parse(this.responseText);
 			      if (this.status === 200) {
-			         console.log('successful');
-			         location.reload();
+			         //console.log('successful');
+			         //location.reload();
+					  document.getElementById('tableForm').innerHTML = this.responseText;
+                      setPageNo(this);
 			      } else {
 			         console.log('failed');
 			      }
 			  }
 		};
-		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload',false);
+		xhttp.open("POST", 'Facial_recognizationServlet?actionType=upload',true);
 		xhttp.send(formData);
 		
 	}

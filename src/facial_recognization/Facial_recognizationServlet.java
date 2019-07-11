@@ -108,7 +108,9 @@ public class Facial_recognizationServlet extends HttpServlet
 				System.out.println("search face requested");
 				if(PermissionRepository.checkPermissionByRoleIDAndMenuID(userDTO.roleID, MenuConstants.FACIAL_RECOGNIZATION_SEARCH))
 				{
-					searchFacial_recognization(request, response);
+					searchFc_recognization (request, response);
+
+					//searchFacial_recognization
 				}
 				else
 				{
@@ -178,9 +180,9 @@ public class Facial_recognizationServlet extends HttpServlet
 
 
 			Process p;
-			String conda = "C:/Users/mahim/Anaconda3/envs/workshop/python";
+			//String conda = "C:/Users/mahim/Anaconda3/envs/workshop/python";
 			//String conda = "C:/Users/REVE PC/Anaconda3/envs/workshop/python";
-			//String conda = "/home/mahim/anaconda3/envs/workshop/bin/python";
+			String conda = "/home/mahim/anaconda3/envs/workshop/bin/python";
 			//Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
 			//String conda = pa.toString();
 			System.out.println("Conda path = "+conda);
@@ -294,9 +296,9 @@ public class Facial_recognizationServlet extends HttpServlet
 					String FileName = "test.jpg";
 
 					uploadFile(filePart_bullDatabase, FileName, "test");
-					request.setAttribute("ajax", true);
-					searchFacial_recognization(request, response);
-//					response.sendRedirect("Facial_recognizationServlet?actionType=search_face");
+					//request.setAttribute("ajax", true);
+					//searchFacial_recognization(request, response);
+					response.sendRedirect("Facial_recognizationServlet?actionType=search_face");
 					//response.setHeader("Refresh", "0; URL=http://localhost:8080/dls2/Facial_recognizationServlet?actionType=search");
 				}
 			}
@@ -369,7 +371,8 @@ public class Facial_recognizationServlet extends HttpServlet
 			{
 				if(PermissionRepository.checkPermissionByRoleIDAndMenuID(userDTO.roleID, MenuConstants.FACIAL_RECOGNIZATION_SEARCH))
 				{
-					searchFacial_recognization(request, response);
+					//searchFacial_recognization(request, response);
+					searchFc_recognization(request, response);
 				}
 				else
 				{
@@ -635,6 +638,60 @@ public class Facial_recognizationServlet extends HttpServlet
 			rd = request.getRequestDispatcher("facial_recognization/facial_recognizationSearchForm.jsp");
 		}
 		//response.setHeader("Refresh", "0; URL=http://localhost:8080/dls2/Facial_recognizationServlet?actionType=search");
+		rd.forward(request, response);
+	}
+
+
+//my variations
+
+	private void searchFc_recognization(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		System.out.println("in searchFacial_recognization 1");
+		Facial_recognizationDAO facial_recognizationDAO = new Facial_recognizationDAO();
+		List<Facial_recognizationDTO> lst = new ArrayList<>();
+		LoginDTO loginDTO = (LoginDTO)request.getSession(true).getAttribute( SessionConstants.USER_LOGIN );
+		try {
+			lst = facial_recognizationDAO.getImageIDDTOLiist();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		request.getSession(true).setAttribute(SessionConstants.VIEW_FACIAL_RECOGNIZATION, lst);
+		/*
+		String ajax = (String)request.getParameter("ajax");
+		boolean hasAjax = false;
+		if(ajax != null && !ajax.equalsIgnoreCase(""))
+		{
+			hasAjax = true;
+		}
+		System.out.println("ajax = " + ajax + " hasajax = " + hasAjax);
+
+		RecordNavigationManager rnManager = new RecordNavigationManager(SessionConstants.NAV_FACIAL_RECOGNIZATION, request, facial_recognizationDAO, SessionConstants.VIEW_FACIAL_RECOGNIZATION, SessionConstants.SEARCH_FACIAL_RECOGNIZATION);
+		try
+		{
+			System.out.println("trying to dojob");
+			rnManager.doJob(loginDTO);
+		}
+		catch(Exception e)
+		{
+			System.out.println("failed to dojob" + e);
+		}
+		//hasAjax = true;
+		*/
+		RequestDispatcher rd;
+		/*
+		if(hasAjax == false)
+		{
+			System.out.println("Going to facial_recognization/facial_recognizationSearch.jsp");
+			rd = request.getRequestDispatcher("facial_recognization/facial_recognizationSearch.jsp");
+		}
+		else
+		{
+			System.out.println("Going to facial_recognization/facial_recognizationSearchForm.jsp");
+			rd = request.getRequestDispatcher("facial_recognization/facial_recognizationSearchForm.jsp");
+		}
+		*/
+		//response.setHeader("Refresh", "0; URL=http://localhost:8080/dls2/Facial_recognizationServlet?actionType=search");
+		rd = request.getRequestDispatcher("facial_recognization/facial_recognizationSearchForm.jsp");
 		rd.forward(request, response);
 	}
 
