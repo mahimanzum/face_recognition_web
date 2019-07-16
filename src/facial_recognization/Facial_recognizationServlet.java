@@ -201,7 +201,7 @@ public class Facial_recognizationServlet extends HttpServlet
 				//write yes in the deicison file
 				try{
 					FileWriter fileWriter = new FileWriter(decision);
-					String fileContent = "2";
+					String fileContent = "0";
 					System.out.println("lINE 202 IN SERVE LET FILE CONTENT "+	fileContent);
 					fileWriter.write(fileContent);
 					fileWriter.close();

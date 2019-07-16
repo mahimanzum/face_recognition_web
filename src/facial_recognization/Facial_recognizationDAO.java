@@ -349,7 +349,6 @@ public class Facial_recognizationDAO  implements NavigationService {
 				System.out.println("got this DTO: " + facial_recognizationDTO);
 
 				facial_recognizationDTOList.add(facial_recognizationDTO);
-
 			}
 
 		} catch (Exception ex) {
@@ -467,7 +466,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 			if (def == '1') {
 				fileContent = "0";
 			} else if (def == '2') {
-				fileContent = "1";
+				fileContent = "0";//vvi
 			} else if (def == '0') {
 				fileContent = "0";
 			}
