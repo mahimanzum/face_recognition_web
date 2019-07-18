@@ -180,9 +180,9 @@ public class Facial_recognizationServlet extends HttpServlet
 
 
 			Process p;
-			String conda = "C:/Users/mahim/Anaconda3/envs/workshop/python";
+			//String conda = "C:/Users/mahim/Anaconda3/envs/workshop/python";
 			//String conda = "C:/Users/REVE PC/Anaconda3/envs/workshop/python";
-			//String conda = "/home/mahim/anaconda3/envs/workshop/bin/python";
+			String conda = "/root/anaconda3/envs/workshop/bin/python";
 			//Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
 			//String conda = pa.toString();
 			System.out.println("Conda path = "+conda);
@@ -652,6 +652,7 @@ public class Facial_recognizationServlet extends HttpServlet
 		LoginDTO loginDTO = (LoginDTO)request.getSession(true).getAttribute( SessionConstants.USER_LOGIN );
 		try {
 			lst = facial_recognizationDAO.getImageIDDTOLiist();
+			//lst = facial_recognizationDAO.getImageIDDTOLiistSorted();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

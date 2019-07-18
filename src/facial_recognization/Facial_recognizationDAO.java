@@ -1,10 +1,6 @@
 package facial_recognization;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 
 import java.sql.SQLException;
 
+import javafx.util.Pair;
 import org.apache.log4j.Logger;
 
 import databasemanager.DatabaseManager;
@@ -25,6 +22,8 @@ import util.NavigationService;
 import user.UserDTO;
 import user.UserDAO;
 import user.UserRepository;
+
+import static java.util.Comparator.comparing;
 
 
 public class Facial_recognizationDAO  implements NavigationService {
@@ -326,7 +325,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 				}
 				sql += ((ArrayList) recordIDs).get(i);
 			}
-			sql += ")  order by ID desc";
+			sql += ")";
 
 			printSql(sql);
 
@@ -380,10 +379,10 @@ public class Facial_recognizationDAO  implements NavigationService {
 		Statement stmt = null;
 		ResultSet resultSet = null;
 		//here put the code
-		String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+		//String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
 		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
-		//String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
-
+		//String path = "/usr/local/jakarta-tomcat-9.0.17/webapps/facialrecognition/img2/";
+		/*
 		String csvFile = path + "data.csv";
 		String decision = path + "decision.txt";
 		BufferedReader br = null;
@@ -479,13 +478,14 @@ public class Facial_recognizationDAO  implements NavigationService {
 			System.out.println("Decision file not found error "
 					+ "$$$$$$$$");
 		}
-
+		*/
+		String ans = "";
 		System.out.println("");
 		System.out.println(ans);
 
 		String sql = "SELECT ID FROM facial_recognization";
 
-		sql += " WHERE isDeleted = 0  order by ID desc ";
+		sql += " WHERE isDeleted = 0 ";
 		//if(!whole)
 
 		sql = "SELECT ID FROM facial_recognization where image like " + "\"%" + ans + "%\"";
@@ -663,7 +663,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 				sql += " AND " + AllFieldSql;
 			}
 
-			sql += " order by facial_recognization.ID desc ";
+
 
 			printSql(sql);
 
@@ -696,17 +696,28 @@ public class Facial_recognizationDAO  implements NavigationService {
 	}
 
 	public List<Facial_recognizationDTO> getImageIDDTOLiist() throws Exception {
+        //String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+        //String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
+        String path = "/usr/local/jakarta-tomcat-9.0.17/webapps/facialrecognition/img2/";
+
+        Properties prop = new Properties();
+        System.out.println("line 697");
+        FileReader in =new FileReader(path+"threshold.properties");
+        prop.load(in);
+        System.out.println("line 699");
+        System.out.print(prop.getProperty("min"));
+        System.out.println("line 701");
+        //prop.setProperty("min", "0.7");
+        //prop.store(new FileOutputStream(path+"threshold.properties"), null);
+        double minThreshold = Double.parseDouble(prop.getProperty("min"));
 		Collection data = new ArrayList();
-
 		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
-
 		Connection connection = null;
 		Statement stmt = null;
 		ResultSet rs = null;
 		//here put the code
-		String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
-		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
-		//String path = "/usr/local/jakarta-tomcat-7.0.61/webapps/facialrecognition/img2/";
+
+
 		String csvFile = path + "data.csv";
 		String decision = path + "decision.txt";
 		BufferedReader br = null;
@@ -744,13 +755,17 @@ public class Facial_recognizationDAO  implements NavigationService {
 					//System.out.print(dis);
 				}
 			}
-			System.out.println(ans);
-			System.out.print(distan);
 
+			/*
 			if (distan > 0.22) {
 				ans = "#$#";
 			}
-
+			*/
+            if (1-distan <minThreshold) {
+                ans = "#$#";
+            }
+            System.out.println(ans);
+            System.out.print(1-distan );
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -760,7 +775,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 		String sql = "SELECT ID FROM facial_recognization";
 
-		sql += " WHERE isDeleted = 0  order by ID desc ";
+		sql += " WHERE isDeleted = 0 ";
 		//if(!whole)
 
 		sql = "SELECT * FROM facial_recognization where image like " + "\"%" + ans + "%\"";
@@ -785,6 +800,142 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 		} catch (Exception e) {
 			logger.fatal("DAO " + e.toString(), e);
+		}
+		return facial_recognizationDTOList;
+	}
+
+	public List<Facial_recognizationDTO> getImageIDDTOLiistSorted() throws Exception {
+		//String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
+		String path = "/usr/local/jakarta-tomcat-9.0.17/webapps/facialrecognition/img2/";
+
+		Properties prop = new Properties();
+		//System.out.println("line 697");
+		FileReader in = new FileReader(path + "threshold.properties");
+		prop.load(in);
+		System.out.println("line 699");
+		System.out.println(prop.getProperty("min"));
+		System.out.println("line 701");
+		//prop.setProperty("min", "0.7");
+		//prop.setProperty("ratio", "2.0");
+		//double ratio = 2.0;
+		//prop.store(new FileOutputStream(path + "threshold.properties"), null);
+		double minThreshold = Double.parseDouble(prop.getProperty("min"));
+		double ratio = Double.parseDouble(prop.getProperty("ratio"));
+		double minVal = 1.0;
+		Collection data = new ArrayList();
+		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
+		Connection connection = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		//here put the code
+
+
+		String csvFile = path + "data.csv";
+		String decision = path + "decision.txt";
+		BufferedReader br = null;
+		String line = "";
+		String cvsSplitBy = ",";
+		String ans = "";
+		boolean whole = true;
+		System.out.println("hello");
+		String currentDirectory = System.getProperty("user.dir");
+		System.out.println("The current working directory is " + currentDirectory);
+		boolean no_found = false;
+		ArrayList<Pair<Double, String>> showList = new ArrayList<>();
+		while (minVal > minThreshold) {
+			try {
+				br = new BufferedReader(new FileReader(path + "test_data.csv"));
+				double test[] = new double[128];
+				while ((line = br.readLine()) != null) {
+					// use comma as separator
+					String[] td = line.split(cvsSplitBy);
+					for (int c = 1; c < td.length; c++) test[c - 1] = Double.parseDouble(td[c]);
+				}
+				double distan = 0;
+				br = new BufferedReader(new FileReader(csvFile));
+				double dis = 10000;
+				while ((line = br.readLine()) != null) {
+					// use comma as separator
+					double sm = 0.0;
+					//double temp[] = new double[128];
+					String[] country = line.split(cvsSplitBy);
+					for (int c = 1; c < country.length; c++)
+						sm = sm + ((Double.parseDouble(country[c])) - test[c - 1]) * ((Double.parseDouble(country[c])) - test[c - 1]);
+					System.out.println(Double.parseDouble(String.valueOf(1-sm))+" thresh = "+String.valueOf(minVal)+"distance = "+ country[0]);
+					if (1 - sm > minVal) {
+						showList.add(new Pair(sm, country[0]));
+					}
+				}
+
+				if (showList.isEmpty()) {
+					ans = "#$#";
+				} else break;
+				System.out.println(ans);
+				System.out.print(1 - distan);
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			minVal = minVal / ratio;
+		}
+		final Comparator<Pair<Double, String> > c = comparing(Pair::getKey);
+
+		Collections.sort(showList, c);
+		Facial_recognizationDTO facial_recognizationDTO = null;
+		for (int i = 0; i < showList.size(); i++) {
+			try {
+
+				String imgName = showList.get(i).getValue();
+				String sql = "SELECT * ";
+
+				sql += " FROM facial_recognization";
+
+				sql += " WHERE image LIKE " + "\"%" + imgName + "%\"";
+				System.out.println("QUERY: line 900: " + sql);
+				printSql(sql);
+
+				logger.debug("sql " + sql);
+				connection = DatabaseManager.getInstance().getConnection();
+				stmt = connection.createStatement();
+
+
+				rs = stmt.executeQuery(sql);
+
+				if(rs.next()) {
+					facial_recognizationDTO = new Facial_recognizationDTO();
+					facial_recognizationDTO.iD = rs.getLong("ID");
+					facial_recognizationDTO.name = rs.getString("name");
+					facial_recognizationDTO.address = rs.getString("address");
+					facial_recognizationDTO.phone = rs.getString("phone");
+					facial_recognizationDTO.email = rs.getString("email");
+					facial_recognizationDTO.image = rs.getString("image");
+					facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
+					System.out.println("got this DTO: " + facial_recognizationDTO);
+
+					facial_recognizationDTOList.add(facial_recognizationDTO);
+				}
+
+			} catch (Exception ex) {
+				System.out.println("got this database error: " + ex);
+				System.out.println("Sql error: " + ex);
+			} finally {
+				try {
+					if (stmt != null) {
+						stmt.close();
+					}
+				} catch (Exception e) {
+				}
+
+				try {
+					if (connection != null) {
+						DatabaseManager.getInstance().freeConnection(connection);
+					}
+				} catch (Exception ex2) {
+				}
+				//return facial_recognizationDTOList;
+			}
 		}
 		return facial_recognizationDTOList;
 	}

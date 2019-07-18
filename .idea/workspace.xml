@@ -9,14 +9,19 @@
     <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/semen_dashboard/Semen_dashboardServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/semen_dashboard/Semen_dashboardServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Ajmat Iqbal.jpg" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Ajmat Iqbal.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/semen_dashboard/Semen_dashboardServlet.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/semen_dashboard/Semen_dashboardServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/DatabaseConnection.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/train.py" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/train.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/DatabaseConnection.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/src/DatabaseConnection.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java" afterPath="$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,32 +33,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="809" column="16" lean-forward="true" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
               <folding>
-                <marker date="1563247860647" expanded="true" signature="969:1039" ph="UPDATE vbSeq... " />
-                <marker date="1563247860647" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
-                <marker date="1563247860647" expanded="true" signature="4974:5001" ph="UPDATE facia... " />
-                <marker date="1563247860647" expanded="true" signature="6553:6580" ph="UPDATE facia... " />
-                <marker date="1563247860647" expanded="true" signature="12440:12475" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563247860647" expanded="true" signature="12556:12631" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563247860647" expanded="true" signature="13645:13679" ph="SELECT * FRO... facial_recognization" />
-                <marker date="1563247860647" expanded="true" signature="15610:15681" ph="SELECT disti... facial_recognization" />
-                <marker date="1563247860647" expanded="true" signature="20466:20501" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563247860647" expanded="true" signature="20582:20656" ph="SELECT ID FR... facial_recognization" />
+                <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+                <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+                <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
+                <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
+                <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
+                <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
+                <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
+                <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
+                <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3477">
-              <caret line="218" column="65" lean-forward="false" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
+            <state relative-caret-position="3618">
+              <caret line="653" column="12" lean-forward="true" selection-start-line="653" selection-start-column="12" selection-end-line="653" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,21 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facial_recognizationSearchRow.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp">
+      <file leaf-file-name="DatabaseConnection.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DatabaseConnection.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facial_recognizationSearchBody.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="201">
+              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -84,8 +81,8 @@
       <file leaf-file-name="facial_recognizationSearchForm.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2465">
-              <caret line="145" column="65" lean-forward="false" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
+            <state relative-caret-position="204">
+              <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -94,18 +91,18 @@
       <file leaf-file-name="facial_recognizationNav.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2074">
-              <caret line="122" column="22" lean-forward="false" selection-start-line="122" selection-start-column="22" selection-end-line="123" selection-end-column="41" />
+            <state relative-caret-position="-1023">
+              <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facial_recognizationSearch.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearch.jsp">
+      <file leaf-file-name="facial_recognizationSearchBody.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -122,6 +119,8 @@
       <find>upload</find>
       <find>searchF</find>
       <find>out</find>
+      <find>$Facial_recognizationDTO</find>
+      <find>got this DTO: $Facial_recognizationDTO</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,6 +140,7 @@
         <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp" />
         <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" />
         <option value="$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java" />
+        <option value="$PROJECT_DIR$/src/DatabaseConnection.xml" />
         <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
         <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
       </list>
@@ -180,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,18 +191,6 @@
               <item name="face_recognition_web" type="b2602c69:ProjectViewProjectNode" />
               <item name="face_recognition_web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="face_recognition_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="face_recognition_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="facial_recognization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="face_recognition_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="face_recognition_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="face_recognition_web" type="b2602c69:ProjectViewProjectNode" />
@@ -226,9 +213,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +226,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="D:/face_min" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java&#10;se&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java&#10;dash&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java" />
+    <property name="SearchEverywhereHistoryKey" value="sem&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java&#10;se&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java&#10;dash&#9;FILE&#9;file://D:/face_recognition_web/src/semen_dashboard/Semen_dashboardServlet.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -427,47 +415,48 @@
       <workItem from="1562496436486" duration="26000" />
       <workItem from="1562559802747" duration="6426000" />
       <workItem from="1562735487609" duration="27903000" />
-      <workItem from="1563244315311" duration="2719000" />
+      <workItem from="1563244315311" duration="10237000" />
+      <workItem from="1563330152377" duration="24132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44615000" />
+    <option name="totallyTimeSpent" value="76265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-312" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19661734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +467,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -488,16 +477,18 @@
         <state relative-caret-position="221">
           <caret line="40" column="123" lean-forward="false" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
           <folding>
-            <marker date="1563247860647" expanded="true" signature="969:1039" ph="UPDATE vbSeq... " />
-            <marker date="1563247860647" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563247860647" expanded="true" signature="4974:5001" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="6553:6580" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="12440:12475" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="12556:12631" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="13645:13679" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="15610:15681" ph="SELECT disti... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20466:20501" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20582:20656" ph="SELECT ID FR... facial_recognization" />
+            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
+            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -514,6 +505,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1666">
           <caret line="122" column="90" lean-forward="false" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -540,16 +532,18 @@
         <state relative-caret-position="8721">
           <caret line="540" column="26" lean-forward="false" selection-start-line="540" selection-start-column="26" selection-end-line="540" selection-end-column="26" />
           <folding>
-            <marker date="1563247860647" expanded="true" signature="969:1039" ph="UPDATE vbSeq... " />
-            <marker date="1563247860647" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563247860647" expanded="true" signature="4974:5001" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="6553:6580" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="12440:12475" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="12556:12631" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="13645:13679" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="15610:15681" ph="SELECT disti... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20466:20501" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20582:20656" ph="SELECT ID FR... facial_recognization" />
+            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
+            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -569,16 +563,18 @@
         <state relative-caret-position="9180">
           <caret line="540" column="26" lean-forward="false" selection-start-line="540" selection-start-column="26" selection-end-line="540" selection-end-column="26" />
           <folding>
-            <marker date="1563247860647" expanded="true" signature="969:1039" ph="UPDATE vbSeq... " />
-            <marker date="1563247860647" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563247860647" expanded="true" signature="4974:5001" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="6553:6580" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="12440:12475" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="12556:12631" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="13645:13679" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="15610:15681" ph="SELECT disti... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20466:20501" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20582:20656" ph="SELECT ID FR... facial_recognization" />
+            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
+            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -627,6 +623,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="122" column="90" lean-forward="false" selection-start-line="122" selection-start-column="90" selection-end-line="122" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -678,42 +675,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
+        <state relative-caret-position="17">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="145" column="65" lean-forward="false" selection-start-line="145" selection-start-column="65" selection-end-line="145" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="22" lean-forward="false" selection-start-line="122" selection-start-column="22" selection-end-line="123" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -726,39 +699,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DatabaseConnection.xml">
+    <entry file="file://$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state relative-caret-position="74">
+          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3477">
-          <caret line="218" column="65" lean-forward="false" selection-start-line="218" selection-start-column="65" selection-end-line="218" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1023">
+          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="71" column="53" lean-forward="false" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DatabaseConnection.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="699" column="0" lean-forward="true" selection-start-line="699" selection-start-column="0" selection-end-line="699" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="809" column="16" lean-forward="true" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
           <folding>
-            <marker date="1563247860647" expanded="true" signature="969:1039" ph="UPDATE vbSeq... " />
-            <marker date="1563247860647" expanded="true" signature="1697:1729" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563247860647" expanded="true" signature="4974:5001" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="6553:6580" ph="UPDATE facia... " />
-            <marker date="1563247860647" expanded="true" signature="12440:12475" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="12556:12631" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="13645:13679" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="15610:15681" ph="SELECT disti... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20466:20501" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563247860647" expanded="true" signature="20582:20656" ph="SELECT ID FR... facial_recognization" />
+            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
+            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
+            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3618">
+          <caret line="653" column="12" lean-forward="true" selection-start-line="653" selection-start-column="12" selection-end-line="653" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

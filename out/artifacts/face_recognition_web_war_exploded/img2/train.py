@@ -6,6 +6,7 @@ import imageio
 import os
 import cv2
 import csv
+from PIL import Image
 
 train_image_path = sys.argv[1]
 train_image_name = sys.argv[2]
@@ -17,8 +18,14 @@ shape_predictor = dlib.shape_predictor(train_image_path+"shape_predictor_68_face
 face_recognition_model = dlib.face_recognition_model_v1(train_image_path+"dlib_face_recognition_resnet_model_v1.dat")
 
 def get_face_encodings(path_to_image):
-        print(path_to_image)
+        #print(path_to_image)
+        im = Image.open(path_to_image)
+        #image = imageio.imread(path_to_image)
+        #image = im.convert('RGB')
+        rgb_im = im.convert('RGB')
+        rgb_im.save(path_to_image)
         image = imageio.imread(path_to_image)
+        #print(type(image))
         detected_faces = face_detector(image, 1)
         shapes_faces = [shape_predictor(image, face) for face in detected_faces]
         return [np.array(face_recognition_model.compute_face_descriptor(image, face_pose, 1)) for face_pose in shapes_faces]
