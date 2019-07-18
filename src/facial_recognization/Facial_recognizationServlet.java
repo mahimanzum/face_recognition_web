@@ -651,8 +651,8 @@ public class Facial_recognizationServlet extends HttpServlet
 		List<Facial_recognizationDTO> lst = new ArrayList<>();
 		LoginDTO loginDTO = (LoginDTO)request.getSession(true).getAttribute( SessionConstants.USER_LOGIN );
 		try {
-			lst = facial_recognizationDAO.getImageIDDTOLiist();
-			//lst = facial_recognizationDAO.getImageIDDTOLiistSorted();
+			//lst = facial_recognizationDAO.getImageIDDTOLiist();
+			lst = facial_recognizationDAO.getImageIDDTOLiistSorted();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

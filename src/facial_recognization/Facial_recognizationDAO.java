@@ -7,11 +7,11 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.*;
 
+import javax.print.DocFlavor;
 import javax.servlet.http.HttpServlet;
 
 import java.sql.SQLException;
 
-import javafx.util.Pair;
 import org.apache.log4j.Logger;
 
 import databasemanager.DatabaseManager;
@@ -822,7 +822,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 		//prop.store(new FileOutputStream(path + "threshold.properties"), null);
 		double minThreshold = Double.parseDouble(prop.getProperty("min"));
 		double ratio = Double.parseDouble(prop.getProperty("ratio"));
-		double minVal = 1.0;
+		double minVal = 0.9;
 		Collection data = new ArrayList();
 		List<Facial_recognizationDTO> facial_recognizationDTOList = new ArrayList<>();
 		Connection connection = null;
@@ -842,7 +842,8 @@ public class Facial_recognizationDAO  implements NavigationService {
 		String currentDirectory = System.getProperty("user.dir");
 		System.out.println("The current working directory is " + currentDirectory);
 		boolean no_found = false;
-		ArrayList<Pair<Double, String>> showList = new ArrayList<>();
+		HashMap<String, Double> mp = new HashMap<String, Double>();
+		ArrayList<String>keyss = new ArrayList<>();
 		while (minVal > minThreshold) {
 			try {
 				br = new BufferedReader(new FileReader(path + "test_data.csv"));
@@ -864,11 +865,13 @@ public class Facial_recognizationDAO  implements NavigationService {
 						sm = sm + ((Double.parseDouble(country[c])) - test[c - 1]) * ((Double.parseDouble(country[c])) - test[c - 1]);
 					System.out.println(Double.parseDouble(String.valueOf(1-sm))+" thresh = "+String.valueOf(minVal)+"distance = "+ country[0]);
 					if (1 - sm > minVal) {
-						showList.add(new Pair(sm, country[0]));
+						mp.put(country[0], sm);
+						keyss.add(country[0]);
+						//showList.add(new Pair(sm, country[0]));
 					}
 				}
 
-				if (showList.isEmpty()) {
+				if (mp.keySet().isEmpty()) {
 					ans = "#$#";
 				} else break;
 				System.out.println(ans);
@@ -880,14 +883,29 @@ public class Facial_recognizationDAO  implements NavigationService {
 			}
 			minVal = minVal / ratio;
 		}
-		final Comparator<Pair<Double, String> > c = comparing(Pair::getKey);
-
-		Collections.sort(showList, c);
 		Facial_recognizationDTO facial_recognizationDTO = null;
-		for (int i = 0; i < showList.size(); i++) {
+		String[] showList = new String[mp.size()];
+		Boolean[] taken = new Boolean[mp.size()];
+		for(int i = 0; i <taken.length; i++) taken[i] = false;
+		for(int j = 0; j <mp.size(); j++) {
+			Double temp_min = 1000.0;
+			String temp_ans = "";
+			int idx = -1;
+			for (int i = 0; i < mp.size(); i++) {
+				if (mp.get(keyss.get(i)) <= temp_min && taken[i] == false) {
+					temp_min = mp.get(keyss.get(i));
+					temp_ans = keyss.get(i);
+					idx = i;
+				}
+			}
+			taken[idx] = true;
+			showList[j] = temp_ans;
+			System.out.println("this should be printed"+ temp_ans);
+		}
+		for (int i = 0; i < showList.length; i++) {
 			try {
 
-				String imgName = showList.get(i).getValue();
+				String imgName = showList[i];
 				String sql = "SELECT * ";
 
 				sql += " FROM facial_recognization";

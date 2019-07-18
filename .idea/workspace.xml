@@ -7,19 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Ajmat Iqbal.jpg" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Ajmat Iqbal.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/DatabaseConnection.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/train.py" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/train.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/DatabaseConnection.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DatabaseConnection.xml" afterPath="$PROJECT_DIR$/src/DatabaseConnection.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
     </list>
@@ -33,34 +20,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="809" column="16" lean-forward="true" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
+            <state relative-caret-position="1190">
+              <caret line="866" column="35" lean-forward="true" selection-start-line="866" selection-start-column="35" selection-end-line="866" selection-end-column="35" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
                 <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
-                <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
-                <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
-                <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
-                <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
-                <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
-                <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
-                <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
-                <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+                <element signature="e#23703#23719#0" expanded="true" />
+                <marker date="1563423776607" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+                <marker date="1563423776607" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+                <marker date="1563423776607" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+                <marker date="1563423776607" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+                <marker date="1563423776607" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563423776607" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563423776607" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+                <marker date="1563423776607" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+                <marker date="1563423776607" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1563423776607" expanded="true" signature="21087:21161" ph="SELECT ID FR... facial_recognization" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3618">
-              <caret line="653" column="12" lean-forward="true" selection-start-line="653" selection-start-column="12" selection-end-line="653" selection-end-column="12" />
+            <state relative-caret-position="1771">
+              <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -416,15 +405,15 @@
       <workItem from="1562559802747" duration="6426000" />
       <workItem from="1562735487609" duration="27903000" />
       <workItem from="1563244315311" duration="10237000" />
-      <workItem from="1563330152377" duration="24132000" />
+      <workItem from="1563330152377" duration="30109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76265000" />
+    <option name="totallyTimeSpent" value="82242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-312" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-173" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -445,7 +434,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24524313" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41226214" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -477,18 +466,20 @@
         <state relative-caret-position="221">
           <caret line="40" column="123" lean-forward="false" selection-start-line="40" selection-start-column="123" selection-end-line="40" selection-end-column="123" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
             <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
-            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
-            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+            <element signature="e#23703#23719#0" expanded="true" />
+            <marker date="1563423776607" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+            <marker date="1563423776607" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563423776607" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="21087:21161" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -532,18 +523,20 @@
         <state relative-caret-position="8721">
           <caret line="540" column="26" lean-forward="false" selection-start-line="540" selection-start-column="26" selection-end-line="540" selection-end-column="26" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
             <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
-            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
-            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+            <element signature="e#23703#23719#0" expanded="true" />
+            <marker date="1563423776607" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+            <marker date="1563423776607" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563423776607" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="21087:21161" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -563,18 +556,20 @@
         <state relative-caret-position="9180">
           <caret line="540" column="26" lean-forward="false" selection-start-line="540" selection-start-column="26" selection-end-line="540" selection-end-column="26" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
             <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
-            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
-            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+            <element signature="e#23703#23719#0" expanded="true" />
+            <marker date="1563423776607" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+            <marker date="1563423776607" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563423776607" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="21087:21161" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
@@ -747,33 +742,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="809" column="16" lean-forward="true" selection-start-line="809" selection-start-column="16" selection-end-line="809" selection-end-column="16" />
+        <state relative-caret-position="1771">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
           <folding>
-            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
-            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
-            <marker date="1563416605436" expanded="true" signature="908:978" ph="UPDATE vbSeq... " />
-            <marker date="1563416605436" expanded="true" signature="1636:1668" ph="INSERT INTO facial_recognization... " />
-            <marker date="1563416605436" expanded="true" signature="4913:4940" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="6492:6519" ph="UPDATE facia... " />
-            <marker date="1563416605436" expanded="true" signature="12390:12425" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="12488:12563" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="13577:13611" ph="SELECT * FRO... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="15542:15613" ph="SELECT disti... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="20984:21019" ph="SELECT ID FR... facial_recognization" />
-            <marker date="1563416605436" expanded="true" signature="21082:21156" ph="SELECT ID FR... facial_recognization" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3618">
-          <caret line="653" column="12" lean-forward="true" selection-start-line="653" selection-start-column="12" selection-end-line="653" selection-end-column="12" />
+        <state relative-caret-position="1190">
+          <caret line="866" column="35" lean-forward="true" selection-start-line="866" selection-start-column="35" selection-end-line="866" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getAllFacial_recognization#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="method#getIDsWithSearchCriteria#0;class#Facial_recognizationDAO#0" expanded="false" />
+            <element signature="e#23703#23719#0" expanded="true" />
+            <marker date="1563423776607" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+            <marker date="1563423776607" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+            <marker date="1563423776607" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+            <marker date="1563423776607" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1563423776607" expanded="true" signature="21087:21161" ph="SELECT ID FR... facial_recognization" />
           </folding>
         </state>
       </provider>
