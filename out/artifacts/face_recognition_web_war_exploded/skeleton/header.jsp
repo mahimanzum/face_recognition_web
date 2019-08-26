@@ -45,13 +45,13 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini">
       <!-- <b>P</b>B -->
-      <img alt="logo" src="<%=context%>assets/static/builder_logo.jpg" style="height:50px ;margin:0px !important">
+      <img alt="logo" src="<%=context%>assets/static/FaceMe_logo.png" style="height:44px ;margin:0px !important">
       	
       </span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">
       <!-- <b>PROJECT</b>BUILDER -->
-       <img alt="logo" src="<%=context%>assets/static/builder_logo.jpg" style="height:50px ;margin:0px !important">
+       <img alt="logo" src="<%=context%>assets/static/FaceMe_logo.png" style="height:44px ;margin:0px !important">
       </span>
     </a>
 

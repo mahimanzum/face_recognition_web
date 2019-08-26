@@ -55,8 +55,8 @@ public class Semen_dashboardServlet extends HttpServlet
 				if(PermissionRepository.checkPermissionByRoleIDAndMenuID(userDTO.roleID, MenuConstants.SEMEN_DASHBOARD))
 				{
 					
-					userTypeDTO.dashboard = "Facial_recognizationServlet?actionType=getAddPage";
-					//userTypeDTO.dashboard = "Facial_recognizationServlet?actionType=search";
+					//userTypeDTO.dashboard = "Facial_recognizationServlet?actionType=getAddPage";
+					userTypeDTO.dashboard = "Facial_recognizationServlet?actionType=search";
 					System.out.println("usertype = " + userDTO.userType);
 					System.out.println("user dashboard = " + userTypeDTO.dashboard);
 					request.getRequestDispatcher(userTypeDTO.dashboard).forward(request, response);
