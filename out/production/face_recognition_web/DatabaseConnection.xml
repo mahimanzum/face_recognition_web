@@ -13,12 +13,12 @@
 						DATABASE_URL="jdbc:mysql://localhost:3306/face"
 						USER_NAME="root"
 						PASSWORD="1234"
-						IS_DEFAULT="FALSE" />
+						IS_DEFAULT="TRUE" />
 				<CONNECTION ID="3" DRIVER_CLASS_NAME="com.mysql.jdbc.Driver"
 						DATABASE_URL="jdbc:mysql://119.148.4.20:3306/face"
 						USER_NAME="facial"
 						PASSWORD="12345" 
-						IS_DEFAULT="TRUE"/>
+						IS_DEFAULT="FALSE"/>
 </CONNECTIONS>
 
 
