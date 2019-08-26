@@ -61,15 +61,19 @@
 					<div class="form-actions text-center">
 					<div class="form-group row">
 						<div class="col-lg-3 "></div>
-						<div class="col-lg-3 " id = 'bullDatabase_div'>
+						<div class="col-lg-3 " id = 'bullDatabase_div' style="padding-top: 45px;">
 							<input type='file' class='form-control'  name='image_to_search' id = 'image_to_search' />	
 											
 						</div>
-						<div class="col-lg-6" style="text-align: left">
-							<img id="searchImg" src="#" style="height: 125px;display: none;">
-							<a class="btn btn-success" onclick = "uploadFile();">
-								Search
-							</a>
+						<div style="text-align:left">
+							<div class="col-lg-1">
+								<img id="searchImg" src="#" style="height: 125px;display: none;">
+							</div>
+							<div class = "col-lg-3" style ="padding-top: 45px">
+								<a class="btn btn-success" onclick = "uploadFile();">
+									Search
+								</a>
+							</div>
 						</div>
 
 					</div>	
