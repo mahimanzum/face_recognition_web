@@ -10,9 +10,9 @@
 						PASSWORD="tesseract" 
 						IS_DEFAULT="FALSE" />
 				<CONNECTION ID="2" DRIVER_CLASS_NAME="com.mysql.jdbc.Driver"
-						DATABASE_URL="jdbc:mysql://localhost:3306/mahim" 
+						DATABASE_URL="jdbc:mysql://localhost:3306/face"
 						USER_NAME="root"
-						PASSWORD="12345" 
+						PASSWORD="1234"
 						IS_DEFAULT="FALSE" />
 				<CONNECTION ID="3" DRIVER_CLASS_NAME="com.mysql.jdbc.Driver"
 						DATABASE_URL="jdbc:mysql://119.148.4.20:3306/face"
