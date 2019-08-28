@@ -73,8 +73,8 @@
       <file leaf-file-name="facial_recognizationEditBody.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="189" column="25" lean-forward="false" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
+            <state relative-caret-position="131">
+              <caret line="186" column="34" lean-forward="false" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -432,12 +432,12 @@
       <workItem from="1566784856901" duration="8136000" />
       <workItem from="1566804300310" duration="6897000" />
       <workItem from="1566975313758" duration="1058000" />
-      <workItem from="1566979226074" duration="1580000" />
+      <workItem from="1566979226074" duration="1679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108323000" />
+    <option name="totallyTimeSpent" value="108422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
@@ -673,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="189" column="25" lean-forward="false" selection-start-line="189" selection-start-column="25" selection-end-line="189" selection-end-column="25" />
+        <state relative-caret-position="131">
+          <caret line="186" column="34" lean-forward="false" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
           <folding />
         </state>
       </provider>
