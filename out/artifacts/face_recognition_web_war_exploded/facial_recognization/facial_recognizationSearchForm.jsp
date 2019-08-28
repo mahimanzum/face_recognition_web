@@ -47,9 +47,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 								<th style="text-align: center;"><%=LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_EMAIL, loginDTO)%></th>
 								<th style="text-align: center;"><%=LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_IMAGE, loginDTO)%></th>
 								<th style="text-align: center;"><%out.print(LM.getText(LC.FACIAL_RECOGNIZATION_SEARCH_FACIAL_RECOGNIZATION_EDIT_BUTTON, loginDTO));%></th>
-								<th><input type="submit" class="btn btn-xs btn-danger" value="
-								<%out.print(LM.getText(LC.FACIAL_RECOGNIZATION_SEARCH_FACIAL_RECOGNIZATION_DELETE_BUTTON, loginDTO));%>
-								" /></th>
+								<th style="text-align: center;">MATCH SCORE</th>
 
 							</tr>
 						</thead>
@@ -140,10 +138,12 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 
 
 
-											out.println("<td>");
-											out.println("<div class='checker'"+ "style='text-align: center;padding-top: 50px;'"+">");
-											out.println("<span id='chkEdit' ><input type='checkbox' name='ID' value='" + row.iD + "'/></span>");
-											out.println("</div");
+											out.println("<td id = '" + i + "_email'"+ "style='text-align: center;padding-top: 50px;width: 200px;'"+ ">");
+											value = row.match_parcentage + "";
+
+											out.println(value);
+
+
 											out.println("</td>");
 											out.println("</tr>");
 										}

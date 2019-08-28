@@ -11,6 +11,7 @@ public class Facial_recognizationDTO {
     public String email = "";
     public String image = "";
 	public boolean isDeleted = false;
+	public int match_parcentage = 0;
 	
     @Override
 	public String toString() {
