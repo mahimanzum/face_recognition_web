@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Abu Reyan Ahmed.JPG" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/Abu Reyan Ahmed.JPG" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/facial_recognization/facial_recognizationEditBody.jsp" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/facial_recognization/facial_recognizationEditBody.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/facial_recognization/facial_recognizationSearchForm.jsp" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/facial_recognization/facial_recognizationSearchForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/data.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +32,8 @@
       <file leaf-file-name="facial_recognizationSearchForm.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="121" column="158" lean-forward="false" selection-start-line="121" selection-start-column="158" selection-end-line="121" selection-end-column="158" />
+            <state relative-caret-position="185">
+              <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -65,7 +59,7 @@
       <file leaf-file-name="facial_recognizationSearchBody.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-888">
+            <state relative-caret-position="-564">
               <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding />
             </state>
@@ -170,6 +164,7 @@
       <find>please fill</find>
       <find>submit</find>
       <find>required</find>
+      <find>DELETE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,8 +206,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1959" />
-    <option name="y" value="86" />
+    <option name="x" value="1328" />
+    <option name="y" value="342" />
     <option name="width" value="1861" />
     <option name="height" value="789" />
   </component>
@@ -477,7 +472,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109003000" />
+    <option name="totallyTimeSpent" value="109896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
@@ -501,7 +496,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28439426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28439426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -978,6 +973,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="179" column="52" lean-forward="true" selection-start-line="179" selection-start-column="52" selection-end-line="179" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearch.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -988,24 +991,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-888">
+        <state relative-caret-position="-564">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="179" column="52" lean-forward="true" selection-start-line="179" selection-start-column="52" selection-end-line="179" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="121" column="158" lean-forward="false" selection-start-line="121" selection-start-column="158" selection-end-line="121" selection-end-column="158" />
+        <state relative-caret-position="185">
+          <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />

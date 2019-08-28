@@ -75,7 +75,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 
 
 
-											out.println("<td id = '" + i + "_name'"+ "style='text-align: center;padding-top: 50px;'"+ ">");
+											out.println("<td id = '" + i + "_name'"+ "style='text-align: center;padding-top: 50px;width: 250px;'"+ ">");
 											value = row.name + "";
 
 											out.println(value);
@@ -84,7 +84,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 											out.println("</td>");
 
 
-											out.println("<td id = '" + i + "_address'"+ "style='text-align: center;padding-top: 50px;'"+ ">");
+											out.println("<td id = '" + i + "_address'"+ "style='text-align: center;padding-top: 50px;width: 300px;'"+ ">");
 											value = row.address + "";
 											out.println(GeoLocationDAO2.parseText(value));
 											{
@@ -108,7 +108,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 											out.println("</td>");
 
 
-											out.println("<td id = '" + i + "_email'"+ "style='text-align: center;padding-top: 50px;'"+ ">");
+											out.println("<td id = '" + i + "_email'"+ "style='text-align: center;padding-top: 50px;width: 200px;'"+ ">");
 											value = row.email + "";
 
 											out.println(value);
@@ -133,7 +133,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 
 											String onclickFunc = "\"fixedToEditable(" + i + ",'" + deletedStyle + "', '" + row.iD + "' )\"";
 
-											out.println("<td id = '" + i + "_Edit'>");
+											out.println("<td id = '" + i + "_Edit'"+ "style='text-align: center;padding-top: 50px;'"+">");
 											out.println("<a onclick=" + onclickFunc + ">" + LM.getText(LC.FACIAL_RECOGNIZATION_SEARCH_FACIAL_RECOGNIZATION_EDIT_BUTTON, loginDTO) + "</a>");
 
 											out.println("</td>");
@@ -141,7 +141,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 
 
 											out.println("<td>");
-											out.println("<div class='checker'>");
+											out.println("<div class='checker'"+ "style='text-align: center;padding-top: 50px;'"+">");
 											out.println("<span id='chkEdit' ><input type='checkbox' name='ID' value='" + row.iD + "'/></span>");
 											out.println("</div");
 											out.println("</td>");
