@@ -187,7 +187,7 @@ String datestr = dateFormat.format(date);
 <label class="col-lg-3 control-label">
 	<%=(actionName.equals("edit"))?(LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_IMAGE, loginDTO)):(LM.getText(LC.FACIAL_RECOGNIZATION_ADD_IMAGE, loginDTO))%>
 </label>
-<div class="form-group ">					
+<div class="form-group ">
 	<div class="col-lg-6 " id = 'image_div_<%=i%>'>	
 		<input type='file' class='form-control'  name='image' id = 'image_image_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.image + "'"):("'" + " " + "'")%>  />	
 						
