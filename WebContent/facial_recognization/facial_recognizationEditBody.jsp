@@ -145,12 +145,12 @@ String datestr = dateFormat.format(date);
 	
 <label class="col-lg-3 control-label">
 	<%=(actionName.equals("edit"))?(LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_ADDRESS, loginDTO)):(LM.getText(LC.FACIAL_RECOGNIZATION_ADD_ADDRESS, loginDTO))%>
-	<span class="required"> * </span>
+	<span class="required">  </span>
 </label>
 <div class="form-group ">					
 	<div class="col-lg-6 " id = 'address_div_<%=i%>'>	
 		<div id ='address_geoDIV_<%=i%>'>
-			<select class='form-control' name='address_active' id = 'address_geoSelectField_<%=i%>' onChange="addrselected(this.value, this.id, this.selectedIndex, this.name, 'address_geoDIV_<%=i%>', 'address_geolocation_<%=i%>')" required="required"  pattern="^((?!select division).)*$" title="address must be selected"
+			<select class='form-control' name='address_active' id = 'address_geoSelectField_<%=i%>' onChange="addrselected(this.value, this.id, this.selectedIndex, this.name, 'address_geoDIV_<%=i%>', 'address_geolocation_<%=i%>')"   pattern="^((?!select division).)*$" title="address must be selected"
 ></select>
 		</div>
 		<input type='text' class='form-control' name='address_text' id = 'address_geoTextField_<%=i%>' value=<%=actionName.equals("edit")?("'" +  GeoLocationDAO2.parseDetails(facial_recognizationDTO.address)  + "'"):("''")%> placeholder='Road Number, House Number etc'>
@@ -162,11 +162,11 @@ String datestr = dateFormat.format(date);
 	
 <label class="col-lg-3 control-label">
 	<%=(actionName.equals("edit"))?(LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_PHONE, loginDTO)):(LM.getText(LC.FACIAL_RECOGNIZATION_ADD_PHONE, loginDTO))%>
-	<span class="required"> * </span>
+	<span class="required">  </span>
 </label>
 <div class="form-group ">					
 	<div class="col-lg-6 " id = 'phone_div_<%=i%>'>	
-		<input type='text' class='form-control'  name='phone' id = 'phone_text_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.phone + "'"):("''")%> required="required"  pattern="880[0-9]{10}" title="phone must start with 880, then contain 10 digits"
+		<input type='text' class='form-control'  name='phone' id = 'phone_text_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.phone + "'"):("''")%>   pattern="880[0-9]{10}" title="phone must start with 880, then contain 10 digits"
   />					
 	</div>
 </div>			
@@ -174,11 +174,11 @@ String datestr = dateFormat.format(date);
 	
 <label class="col-lg-3 control-label">
 	<%=(actionName.equals("edit"))?(LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_EMAIL, loginDTO)):(LM.getText(LC.FACIAL_RECOGNIZATION_ADD_EMAIL, loginDTO))%>
-	<span class="required"> * </span>
+	<span class="required">  </span>
 </label>
 <div class="form-group ">					
 	<div class="col-lg-6 " id = 'email_div_<%=i%>'>	
-		<input type='text' class='form-control'  name='email' id = 'email_text_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.email + "'"):("''")%> required="required"  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="email must be a of valid email address format"
+		<input type='text' class='form-control'  name='email' id = 'email_text_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.email + "'"):("''")%>  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" title="email must be a of valid email address format"
   />					
 	</div>
 </div>			
@@ -186,10 +186,12 @@ String datestr = dateFormat.format(date);
 	
 <label class="col-lg-3 control-label">
 	<%=(actionName.equals("edit"))?(LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_IMAGE, loginDTO)):(LM.getText(LC.FACIAL_RECOGNIZATION_ADD_IMAGE, loginDTO))%>
+	<span class="required"> * </span>
+
 </label>
 <div class="form-group ">
 	<div class="col-lg-6 " id = 'image_div_<%=i%>'>	
-		<input type='file' class='form-control'  name='image' id = 'image_image_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.image + "'"):("'" + " " + "'")%>  />	
+		<input type='file' class='form-control'  name='image' id = 'image_image_<%=i%>' value=<%=actionName.equals("edit")?("'" + facial_recognizationDTO.image + "'"):("'" + " " + "'")%> required="required" />
 						
 	</div>
 </div>			
