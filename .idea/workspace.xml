@@ -7,7 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" afterPath="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,97 +26,42 @@
       <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="618" column="0" lean-forward="false" selection-start-line="618" selection-start-column="0" selection-end-line="618" selection-end-column="0" />
+            <state relative-caret-position="-1152">
+              <caret line="191" column="60" lean-forward="false" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facial_recognizationSearchForm.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="facial_recognizationSearchForm.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="141" column="139" lean-forward="true" selection-start-line="141" selection-start-column="139" selection-end-line="141" selection-end-column="139" />
+            <state relative-caret-position="213">
+              <caret line="49" column="58" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facial_recognizationSearch.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearch.jsp">
+      <file leaf-file-name="Facial_recognizationDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facial_recognizationSearchBody.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-564">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facial_recognizationEditBody.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="179" column="52" lean-forward="true" selection-start-line="179" selection-start-column="52" selection-end-line="179" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Facial_recognizationDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facial_recognizationSearchRow.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facial_recognizationInPlaceEdit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationInPlaceEdit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseConnection.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DatabaseConnection.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding />
+            <state relative-caret-position="177">
+              <caret line="884" column="13" lean-forward="true" selection-start-line="884" selection-start-column="13" selection-end-line="884" selection-end-column="13" />
+              <folding>
+                <marker date="1567051559132" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+                <marker date="1567051559132" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+                <marker date="1567051559132" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+                <marker date="1567051559132" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+                <marker date="1567051559132" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1567051559132" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1567051559132" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+                <marker date="1567051559132" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+                <marker date="1567051559132" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+                <marker date="1567051559132" expanded="true" signature="21087:21161" ph="SELECT * FRO... facial_recognization" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,26 +69,10 @@
       <file leaf-file-name="facial_recognizationNav.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1026">
-              <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+            <state relative-caret-position="360">
+              <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
               <folding>
-                <marker date="1566984854668" expanded="true" signature="2446:2457" ph="..." />
-                <marker date="1566984854668" expanded="true" signature="2617:5105" ph="..." />
-                <marker date="1566984854668" expanded="true" signature="2644:3703" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="2904:3165" ph="/*...*/" />
-                <marker date="1566984854668" expanded="true" signature="3207:3596" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="3241:3592" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="3332:3532" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="3346:3407" ph="//..." />
-                <marker date="1566984854668" expanded="true" signature="3538:3585" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="3731:3928" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="3957:4416" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4056:4332" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4119:4222" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4284:4326" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4449:4637" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4670:5095" ph="{...}" />
-                <marker date="1566984854668" expanded="true" signature="4751:4961" ph="..." />
+                <marker date="1567050551562" expanded="true" signature="2446:2457" ph="..." />
               </folding>
             </state>
           </provider>
@@ -182,15 +115,15 @@
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.servlet-3.0.jar!/javax/servlet/http/HttpServlet.class" />
         <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp" />
         <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
-        <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
         <option value="$PROJECT_DIR$/src/semen_dashboard/Semen_dashboardServlet.java" />
         <option value="$PROJECT_DIR$/src/DatabaseConnection.xml" />
         <option value="$PROJECT_DIR$/WebContent/skeleton/header.jsp" />
         <option value="$PROJECT_DIR$/WebContent/home/login.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" />
         <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp" />
         <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java" />
+        <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp" />
         <option value="$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp" />
+        <option value="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
       </list>
     </option>
   </component>
@@ -208,8 +141,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1328" />
-    <option name="y" value="342" />
+    <option name="x" value="17" />
+    <option name="y" value="102" />
     <option name="width" value="1861" />
     <option name="height" value="789" />
   </component>
@@ -228,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,8 +194,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -470,71 +403,47 @@
       <workItem from="1566804300310" duration="6897000" />
       <workItem from="1566975313758" duration="1058000" />
       <workItem from="1566979226074" duration="1679000" />
+      <workItem from="1567045064097" duration="6843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111420000" />
+    <option name="totallyTimeSpent" value="118789000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="49" y="25" width="1871" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2840549" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28439426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18802084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19722074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28439426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -639,31 +548,8 @@
         <state relative-caret-position="1026">
           <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
           <folding>
-            <marker date="1566984854668" expanded="true" signature="2446:2457" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2617:5105" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2644:3703" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="2904:3165" ph="/*...*/" />
-            <marker date="1566984854668" expanded="true" signature="3207:3596" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3241:3592" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3332:3532" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3346:3407" ph="//..." />
-            <marker date="1566984854668" expanded="true" signature="3538:3585" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3731:3928" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3957:4416" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4056:4332" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4119:4222" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4284:4326" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4449:4637" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4670:5095" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4751:4961" ph="..." />
+            <marker date="1567050551562" expanded="true" signature="2446:2457" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11592">
-          <caret line="810" column="29" lean-forward="false" selection-start-line="810" selection-start-column="29" selection-end-line="810" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -698,26 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationInPlaceEdit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="188" column="37" lean-forward="false" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -744,12 +614,6 @@
           <caret line="120" column="32" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="564" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,12 +632,6 @@
           <caret line="86" column="84" lean-forward="false" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -798,23 +656,7 @@
         <state relative-caret-position="1026">
           <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
           <folding>
-            <marker date="1566984854668" expanded="true" signature="2446:2457" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2617:5105" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2644:3703" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="2904:3165" ph="/*...*/" />
-            <marker date="1566984854668" expanded="true" signature="3207:3596" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3241:3592" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3332:3532" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3346:3407" ph="//..." />
-            <marker date="1566984854668" expanded="true" signature="3538:3585" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3731:3928" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3957:4416" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4056:4332" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4119:4222" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4284:4326" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4449:4637" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4670:5095" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4751:4961" ph="..." />
+            <marker date="1567050551562" expanded="true" signature="2446:2457" ph="..." />
           </folding>
         </state>
       </provider>
@@ -841,12 +683,6 @@
           <caret line="86" column="84" lean-forward="false" selection-start-line="86" selection-start-column="76" selection-end-line="86" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -871,23 +707,7 @@
         <state relative-caret-position="1026">
           <caret line="57" column="50" lean-forward="true" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
           <folding>
-            <marker date="1566984854668" expanded="true" signature="2446:2457" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2617:5105" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2644:3703" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="2904:3165" ph="/*...*/" />
-            <marker date="1566984854668" expanded="true" signature="3207:3596" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3241:3592" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3332:3532" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3346:3407" ph="//..." />
-            <marker date="1566984854668" expanded="true" signature="3538:3585" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3731:3928" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3957:4416" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4056:4332" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4119:4222" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4284:4326" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4449:4637" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4670:5095" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4751:4961" ph="..." />
+            <marker date="1567050551562" expanded="true" signature="2446:2457" ph="..." />
           </folding>
         </state>
       </provider>
@@ -907,44 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-          <folding>
-            <marker date="1566984854668" expanded="true" signature="2446:2457" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2617:5105" ph="..." />
-            <marker date="1566984854668" expanded="true" signature="2644:3703" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="2904:3165" ph="/*...*/" />
-            <marker date="1566984854668" expanded="true" signature="3207:3596" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3241:3592" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3332:3532" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3346:3407" ph="//..." />
-            <marker date="1566984854668" expanded="true" signature="3538:3585" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3731:3928" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="3957:4416" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4056:4332" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4119:4222" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4284:4326" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4449:4637" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4670:5095" ph="{...}" />
-            <marker date="1566984854668" expanded="true" signature="4751:4961" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.servlet-3.0.jar!/javax/servlet/ServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="618" column="0" lean-forward="false" selection-start-line="618" selection-start-column="0" selection-end-line="618" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +756,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearch.jsp">
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationInPlaceEdit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -980,40 +766,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchBody.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
+        <state relative-caret-position="-907">
           <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearch.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationEditBody.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="179" column="52" lean-forward="true" selection-start-line="179" selection-start-column="52" selection-end-line="179" selection-end-column="52" />
+        <state relative-caret-position="-216">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchRow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="76" column="76" lean-forward="false" selection-start-line="76" selection-start-column="76" selection-end-line="76" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationNav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="131" column="38" lean-forward="true" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+          <folding>
+            <marker date="1567050551562" expanded="true" signature="2446:2457" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <caret line="191" column="60" lean-forward="false" selection-start-line="191" selection-start-column="60" selection-end-line="191" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/facial_recognization/facial_recognizationSearchForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="141" column="139" lean-forward="true" selection-start-line="141" selection-start-column="139" selection-end-line="141" selection-end-column="139" />
+        <state relative-caret-position="213">
+          <caret line="49" column="58" lean-forward="false" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="884" column="13" lean-forward="true" selection-start-line="884" selection-start-column="13" selection-end-line="884" selection-end-column="13" />
+          <folding>
+            <marker date="1567051559132" expanded="true" signature="913:983" ph="UPDATE vbSeq... " />
+            <marker date="1567051559132" expanded="true" signature="1641:1673" ph="INSERT INTO facial_recognization... " />
+            <marker date="1567051559132" expanded="true" signature="4918:4945" ph="UPDATE facia... " />
+            <marker date="1567051559132" expanded="true" signature="6497:6524" ph="UPDATE facia... " />
+            <marker date="1567051559132" expanded="true" signature="12395:12430" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1567051559132" expanded="true" signature="12493:12568" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1567051559132" expanded="true" signature="13582:13616" ph="SELECT * FRO... facial_recognization" />
+            <marker date="1567051559132" expanded="true" signature="15547:15618" ph="SELECT disti... facial_recognization" />
+            <marker date="1567051559132" expanded="true" signature="20989:21024" ph="SELECT ID FR... facial_recognization" />
+            <marker date="1567051559132" expanded="true" signature="21087:21161" ph="SELECT * FRO... facial_recognization" />
           </folding>
         </state>
       </provider>

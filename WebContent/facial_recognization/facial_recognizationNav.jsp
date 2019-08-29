@@ -128,6 +128,7 @@
 			         //console.log('successful');
 			         //location.reload();
 					  document.getElementById('tableForm').innerHTML = this.responseText;
+                      $(".show-parcentage").removeAttr("hidden");
                       setPageNo(this);
 			      } else {
 			         console.log('failed');

@@ -47,7 +47,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 								<th style="text-align: center;"><%=LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_EMAIL, loginDTO)%></th>
 								<th style="text-align: center;"><%=LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_IMAGE, loginDTO)%></th>
 								<th style="text-align: center;"><%out.print(LM.getText(LC.FACIAL_RECOGNIZATION_SEARCH_FACIAL_RECOGNIZATION_EDIT_BUTTON, loginDTO));%></th>
-								<th style="text-align: center;">MATCH SCORE(%)</th>
+								<th class='show-parcentage' style="text-align: center;" hidden>MATCH SCORE(%)</th>
 								<th><input type="submit" class="btn btn-xs btn-danger" value="
 								<%out.print(LM.getText(LC.FACIAL_RECOGNIZATION_SEARCH_FACIAL_RECOGNIZATION_DELETE_BUTTON, loginDTO));%>
 								" /></th>
@@ -139,7 +139,7 @@ String Language = LM.getText(LC.FACIAL_RECOGNIZATION_EDIT_LANGUAGE, loginDTO);
 
 											out.println("</td>");
 
-											out.println("<td id = '" + i + "_email'"+ "style='text-align: center;padding-top: 50px;width: 200px;'"+ ">");
+											out.println("<td class='show-parcentage' id = '" + i + "_match_parcentage'"+ "style='text-align: center;padding-top: 50px;width: 200px;'"+ " hidden>");
 											value = row.match_parcentage + "";
 
 											out.println(value);

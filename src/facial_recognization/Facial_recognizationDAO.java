@@ -932,6 +932,7 @@ public class Facial_recognizationDAO  implements NavigationService {
 					facial_recognizationDTO.email = rs.getString("email");
 					facial_recognizationDTO.image = rs.getString("image");
 					facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
+					facial_recognizationDTO.match_parcentage = 100.0*(1-mp.get(rs.getString("name")));
 					System.out.println("got this DTO: " + facial_recognizationDTO);
 
 					facial_recognizationDTOList.add(facial_recognizationDTO);
