@@ -1,0 +1,51 @@
+Environment setup and verification
+
+Prerequisites
+Anaconda (latest)
+JDK1.8
+Tomcat (latest)
+MySQL (latest)
+
+Installation steps
+Install Anaconda from:  https://www.anaconda.com/distribution/
+add conda.bat path to environment PATH variable (usually located at C:\Users\{USER}\Anaconda3\condabin)
+Create anaconda environment (for example workshop) + update if necessary
+
+$ conda create -n workshop
+$ conda update -n base -c defaults conda
+
+$ conda activate workshop
+(workshop)> conda update --all
+(workshop)> conda install -c conda-forge dlib
+
+python # this will enter into the python environment inside anaconda
+
+>>> import sys
+>>> import dlib
+>>> import numpy as np
+>>> import scipy.misc
+>>> import imageio
+>>> import os
+>>> import cv2
+>>> import csv
+>>> from PIL import Image
+
+(workshop)> conda install {PACKAGE_NAME}
+(workshop)> pip install opencv-python   # for cv2, we need to install via pip
+
+Inside the source code folder:
+src/DatabaseConnection.xml: select the right db and set IS_DEFAULT=true   // to get the db connection
+src/facial_recognization/Facial_recognizationDao.java  => inside getImageIDDTOLiistSorted() method, update the path to img2 folder
+src/facial_recognization/Facial_recognizationServlet.java => inside upload() method fix the conda path to the newly created environment's python path
+
+Deployment: 
+git clone https://github.com/mahimanzum/face_recognition_web.git
+run the project
+To run locally
+	IN facial_recognizationServelet.java function uploadFile line 182-186 give the variable "conda" correct python environment file 		location installaed previously
+	IN facial_recognizationDAO.java function getImageIDDTOLiistSorted() give the "PATH" variable the correct location of the img2 			folder (for intelij it is in the out folder)
+
+for new user adding 
+password is admin2
+INSERT INTO `face`.`user` (`ID`, `userName`, `password`, `roleID`, `languageID`, `userType`, `mailAddress`, `fullName`, `phoneNo`, `loginIPs`, `lastModificationTime`, `isDeleted`, `otpSMS`, `otpEmail`, `otpPushNotification`, `centre_type`) VALUES ('53000', 'admin_new', 'MV8WbFrKY6FX99QQB2dctEqUizM=', '1', '1', '1', 'abc@gmail.com', 'Pro Admin', '01760131398', '', '1566793152291', '0', '0', '0', '0', '3');
+
