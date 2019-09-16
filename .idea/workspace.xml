@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/WEB-INF/classes/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" afterPath="$PROJECT_DIR$/out/production/face_recognition_web/facial_recognization/Facial_recognizationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" afterPath="$PROJECT_DIR$/out/artifacts/face_recognition_web_war_exploded/img2/test_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" afterPath="$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java" />
-    </list>
+    <list default="true" id="b05ef100-89a7-47f0-8ef2-758a65baa46c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +20,8 @@
       <file leaf-file-name="Facial_recognizationServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="186" column="66" lean-forward="true" selection-start-line="186" selection-start-column="66" selection-end-line="186" selection-end-column="66" />
+            <state relative-caret-position="-252">
+              <caret line="201" column="45" lean-forward="false" selection-start-line="201" selection-start-column="45" selection-end-line="201" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -433,12 +423,12 @@
       <workItem from="1567310278692" duration="107000" />
       <workItem from="1567310817795" duration="87000" />
       <workItem from="1568601375603" duration="1613000" />
-      <workItem from="1568606727708" duration="540000" />
+      <workItem from="1568606727708" duration="1041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121635000" />
+    <option name="totallyTimeSpent" value="122136000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1992" y="193" width="1920" height="1082" extended-state="6" />
@@ -868,8 +858,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/facial_recognization/Facial_recognizationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="186" column="66" lean-forward="true" selection-start-line="186" selection-start-column="66" selection-end-line="186" selection-end-column="66" />
+        <state relative-caret-position="-252">
+          <caret line="201" column="45" lean-forward="false" selection-start-line="201" selection-start-column="45" selection-end-line="201" selection-end-column="45" />
           <folding />
         </state>
       </provider>
