@@ -183,8 +183,8 @@ public class Facial_recognizationServlet extends HttpServlet
 			//String conda = "C:/Users/mahim/Anaconda3/envs/workshop/python";
 			//String conda = "C:/Users/REVE PC/Anaconda3/envs/workshop/python";
 
-			//String conda = "/home/mahim/anaconda3/envs/workshop/bin/python";
-			String conda = "/root/anaconda3/envs/workshop/bin/python";
+			String conda = "/home/mahim/anaconda3/envs/workshop/bin/python";
+			//String conda = "/root/anaconda3/envs/workshop/bin/python";
 			//Path pa = (Path) Paths.get("c:", "Users","REVE PC", "Anaconda3", "envs", "workshop", "python");
 			//String conda = pa.toString();
 			System.out.println("Conda path = "+conda);

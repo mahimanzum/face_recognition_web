@@ -808,8 +808,8 @@ public class Facial_recognizationDAO  implements NavigationService {
 		//String path = "D:/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
 		//String path = "C:/Users/REVE PC/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/dls2/img2/";
 
-		//String path = "/home/mahim/Desktop/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
-		String path = "/usr/local/jakarta-tomcat-9.0.17/webapps/facialrecognition/img2/";
+		String path = "/home/mahim/Desktop/face_recognition_web/out/artifacts/face_recognition_web_war_exploded/img2/";
+		//String path = "/usr/local/jakarta-tomcat-9.0.17/webapps/facialrecognition/img2/";
 
 		Properties prop = new Properties();
 		//System.out.println("line 697");
@@ -918,11 +918,10 @@ public class Facial_recognizationDAO  implements NavigationService {
 
 				logger.debug("sql " + sql);
 				connection = DatabaseManager.getInstance().getConnection();
+
 				stmt = connection.createStatement();
-
-
 				rs = stmt.executeQuery(sql);
-
+				System.out.println("comes before if ");
 				if(rs.next()) {
 					facial_recognizationDTO = new Facial_recognizationDTO();
 					facial_recognizationDTO.iD = rs.getLong("ID");
@@ -930,9 +929,10 @@ public class Facial_recognizationDAO  implements NavigationService {
 					facial_recognizationDTO.address = rs.getString("address");
 					facial_recognizationDTO.phone = rs.getString("phone");
 					facial_recognizationDTO.email = rs.getString("email");
-					facial_recognizationDTO.image = rs.getString("image");
+					String image_name = rs.getString("image");
+					facial_recognizationDTO.image = image_name;
 					facial_recognizationDTO.isDeleted = rs.getBoolean("isDeleted");
-					facial_recognizationDTO.match_parcentage = 100.0*(1-mp.get(rs.getString("name")));
+					facial_recognizationDTO.match_parcentage = 100.0*(1-mp.get(image_name.substring(0,image_name.length()-4)));
 					System.out.println("got this DTO: " + facial_recognizationDTO);
 
 					facial_recognizationDTOList.add(facial_recognizationDTO);
