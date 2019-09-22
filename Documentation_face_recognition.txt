@@ -7,9 +7,17 @@ Tomcat (latest)
 MySQL (latest)
 
 Installation steps
-Install Anaconda from:  https://www.anaconda.com/distribution/
-add conda.bat path to environment PATH variable (usually located at C:\Users\{USER}\Anaconda3\condabin)
+in this link you will find the similar things
+
+https://www.evernote.com/l/ApVXDrypGYZEoImhn1Z2VOqTG5rVrIRVU3s/
+
+(for windows)Install Anaconda from:  https://www.anaconda.com/distribution/
+for ubuntu use the link below
+https://www.digitalocean.com/community/tutorials/how-to-install-anaconda-on-ubuntu-18-04-quickstart
+
+(for ubuntu this is not necessary) add conda.bat path to environment PATH variable (usually located at C:\Users\{USER}\Anaconda3\condabin)
 Create anaconda environment (for example workshop) + update if necessary
+following will work in cmd or terminal
 
 $ conda create -n workshop
 $ conda update -n base -c defaults conda
@@ -30,7 +38,7 @@ python # this will enter into the python environment inside anaconda
 >>> import csv
 >>> from PIL import Image
 
-(workshop)> conda install {PACKAGE_NAME}
+(workshop)> conda install {PACKAGE_NAME} if any package is not imported
 (workshop)> pip install opencv-python   # for cv2, we need to install via pip
 
 Inside the source code folder:
@@ -45,7 +53,7 @@ To run locally
 	IN facial_recognizationServelet.java function uploadFile line 182-186 give the variable "conda" correct python environment file 		location installaed previously
 	IN facial_recognizationDAO.java function getImageIDDTOLiistSorted() give the "PATH" variable the correct location of the img2 			folder (for intelij it is in the out folder)
 
-for new user adding 
-password is admin2
+for new user adding
+the next query is for addming a new user named "admin_new" with password is admin2 in the database
 INSERT INTO `face`.`user` (`ID`, `userName`, `password`, `roleID`, `languageID`, `userType`, `mailAddress`, `fullName`, `phoneNo`, `loginIPs`, `lastModificationTime`, `isDeleted`, `otpSMS`, `otpEmail`, `otpPushNotification`, `centre_type`) VALUES ('53000', 'admin_new', 'MV8WbFrKY6FX99QQB2dctEqUizM=', '1', '1', '1', 'abc@gmail.com', 'Pro Admin', '01760131398', '', '1566793152291', '0', '0', '0', '0', '3');
 
